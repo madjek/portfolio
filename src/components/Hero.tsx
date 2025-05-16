@@ -38,26 +38,26 @@ export default function Hero() {
             </h2>
             <p className="mb-8 max-w-xl text-lg">{t('description')}</p>
             <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-              <a
+              <Link
                 href="#contact"
                 className="rounded-lg bg-indigo-600 px-6 py-3 text-white transition-colors duration-300 hover:bg-indigo-700"
               >
                 {t('contact')}
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#projects"
                 className="rounded-lg border border-indigo-600 px-6 py-3 text-indigo-600 transition-colors duration-300 hover:bg-indigo-600 hover:text-white"
               >
                 {t('viewWork')}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm flex-1">
             <div className="relative">
               <div className="mx-auto h-64 w-64 overflow-hidden rounded-full border-4 border-indigo-500 shadow-xl md:h-80 md:w-80">
                 <Image
-                  width={200}
-                  height={200}
+                  width={450}
+                  height={450}
                   src="/img/hero.jpg"
                   alt="Yevhenii Madzhar"
                   className="h-full w-full object-cover"

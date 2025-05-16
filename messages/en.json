@@ -24,6 +24,34 @@
   },
   "skills": {
     "skills": "Technical Skills",
-    "description": "I combine solid frontend expertise with practical backend development, intuitive UI/UX design, and a strong focus on performance and tooling. I strive to create seamless, maintainable, and user-friendly web applications."
+    "description": "I combine solid frontend expertise with practical backend development, intuitive UI/UX design, and a strong focus on performance and tooling. I strive to create seamless, maintainable, and user-friendly web applications.",
+    "design": "Design",
+    "tools": "Tools",
+    "performance": "Performance"
+  },
+  "projects": {
+    "viewDetails": "View Details",
+    "all": "All",
+    "screenshots": "Screenshots",
+    "ecommerce": "E-Commerce Insights Hub",
+    "ecommerceDescription": "A dynamic dashboard delivering real-time insights for e-commerce growth and performance.",
+    "ecommerceDetails": "Designed to empower online retailers, this dashboard aggregates key business metrics with real-time visualizations. It supports customizable widgets, advanced filters, and exportable reports. Built with Redux for scalable state management and Chart.js for interactive charts.",
+    "task": "TeamFlow - Task Collaboration App",
+    "taskDescription": "An intuitive platform for managing tasks, teams, and timelines in real time.",
+    "taskDetails": "TeamFlow enables seamless collaboration with drag-and-drop task boards, integrated chat, comment threads, and file attachments. Built with Next.js and Firebase to provide real-time updates and efficient task coordination.",
+    "fitness": "FitTrack - Personal Fitness Platform",
+    "fitnessDescription": "A tailored fitness solution with smart tracking, custom plans, and performance analysis.",
+    "fitnessDetails": "FitTrack lets users build and follow personalized workout plans, monitor progress with detailed graphs, and stay motivated through milestone tracking. The app uses React and TypeScript on the frontend, backed by Node.js and MongoDB for robust data handling.",
+    "estate": "ProEstate - Property Discovery Portal",
+    "estateDescription": "A sleek real estate portal with immersive browsing and intelligent search tools.",
+    "estateDetails": "ProEstate reimagines property discovery with map-based navigation, 3D virtual tours, smart filtering, and user-friendly saved listings. Built with Next.js to leverage SSR and SEO for optimal reach.",
+    "social": "SociaLens - Social Analytics Suite",
+    "socialDescription": "A powerful tool for decoding social media trends and boosting engagement.",
+    "socialDetails": "SociaLens aggregates performance data from various platforms into custom dashboards. It offers scheduled reporting, competitor benchmarking, and AI-based content tips. Developed using React, Redux, and D3.js for high-performance visualization.",
+    "education": "EduCore - Interactive Learning Environment",
+    "educationDescription": "A digital learning ecosystem with engaging content and progress insights.",
+    "educationDetails": "EduCore supports both learners and educators with video courses, quizzes, and certification features. Instructors can build and manage courses, while students track their learning through intuitive dashboards. Built with React, TypeScript, and Firebase for real-time data and secure auth.",
+    "projects": "Featured Projects",
+    "projectsDescription": "Here's a selection of my recent work that demonstrates my expertise in building modern, responsive, and user-friendly web applications."
   }
 }

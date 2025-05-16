@@ -51,7 +51,7 @@ export default function Skills() {
       ],
     },
     {
-      name: 'Design',
+      name: t('design'),
       icon: <PaletteIcon size={20} />,
       skills: [
         { name: 'UI/UX Design', level: 85 },
@@ -62,26 +62,24 @@ export default function Skills() {
       ],
     },
     {
-      name: 'Tools',
+      name: t('tools'),
       icon: <TerminalIcon size={20} />,
       skills: [
         { name: 'Git', level: 90 },
         { name: 'GitHub Actions', level: 75 },
         { name: 'Jest/Testing Library', level: 65 },
         { name: 'VS Code', level: 95 },
-        { name: 'npm/yarn', level: 90 },
         { name: 'Docker', level: 70 },
       ],
     },
     {
-      name: 'Performance',
+      name: t('performance'),
       icon: <BarChart2Icon size={20} />,
       skills: [
         { name: 'Web Vitals', level: 85 },
         { name: 'Lighthouse', level: 90 },
         { name: 'Bundle Optimization', level: 85 },
         { name: 'SEO', level: 80 },
-        { name: 'Code Splitting', level: 80 },
         { name: 'Caching Strategies', level: 75 },
       ],
     },
