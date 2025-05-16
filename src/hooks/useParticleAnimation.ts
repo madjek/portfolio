@@ -1,4 +1,4 @@
-import { Particle } from '@/components/Particle';
+import { Particle } from '@/utils/particle';
 import { useEffect, useRef } from 'react';
 
 export const useParticleAnimation = () => {

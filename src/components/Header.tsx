@@ -7,10 +7,10 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import ThemeSwitch from './ThemeSwitch';
 
-export const Header = () => {
+export default function Header() {
+  const t = useTranslations('header');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations('header');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,4 +111,4 @@ export const Header = () => {
       )}
     </header>
   );
-};
+}

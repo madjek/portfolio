@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const Hero = () => {
+export default function Hero() {
   const t = useTranslations('hero');
   const titles = [
     t('title1'),
@@ -77,4 +77,4 @@ export const Hero = () => {
       </div>
     </section>
   );
-};
+}

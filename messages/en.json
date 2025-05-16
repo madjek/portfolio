@@ -21,5 +21,9 @@
     "contact": "Contact Me",
     "viewWork": "View My Work",
     "experience": "3+ Years Experience"
+  },
+  "skills": {
+    "skills": "Technical Skills",
+    "description": "I combine solid frontend expertise with practical backend development, intuitive UI/UX design, and a strong focus on performance and tooling. I strive to create seamless, maintainable, and user-friendly web applications."
   }
 }
