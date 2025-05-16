@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function CaseStudyHeader({ study }: { study: CaseStudy }) {
   return (
-    <div className="relative h-[70vh] w-1/2">
+    <div className="relative h-[30vh] md:h-[70vh] md:w-1/2">
       <Image
         width={600}
         height={600}
