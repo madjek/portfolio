@@ -8,11 +8,9 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
-
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
@@ -24,6 +22,7 @@ const eslintConfig = [
       '@typescript-eslint': typescript,
       'jsx-a11y': jsxA11y,
       'react-hooks': reactHooks,
+      'eslint-plugin-prettier': prettierConfig,
     },
   },
   {
@@ -46,6 +45,8 @@ const eslintConfig = [
         { blankLine: 'always', prev: 'import', next: '*' },
         { blankLine: 'any', prev: 'import', next: 'import' },
         { blankLine: 'always', prev: 'block', next: 'block' },
+        { blankLine: 'always', prev: '*', next: 'function' },
+        { blankLine: 'never', prev: 'const', next: 'const' },
         {
           blankLine: 'always',
           prev: '*',

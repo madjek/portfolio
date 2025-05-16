@@ -1,6 +1,25 @@
 {
-  "home": {
-    "title": "Home",
-    "description": "Home page description"
+  "homePage": {
+    "title": "Yevhenii Madzhar – Fullstack Developer",
+    "description": "Fullstack developer crafting modern, responsive, and high-performance web applications with a focus on both frontend and backend excellence."
+  },
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "studies": "Case Studies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Middle Fullstack Developer",
+    "title2": "Building modern web apps",
+    "title3": "Connecting users with great UI",
+    "title4": "Crafting APIs with care",
+    "title5": "Turning ideas into code",
+    "hello": "Hello, I'm",
+    "description": "With over 3 years of experience creating beautiful, responsive, and high-performing web applications, I specialize in fullstack development — delivering everything from sleek user interfaces to reliable backend systems using modern technologies.",
+    "contact": "Contact Me",
+    "viewWork": "View My Work",
+    "experience": "3+ Years Experience"
   }
 }
