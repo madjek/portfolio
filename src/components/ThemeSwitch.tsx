@@ -1,0 +1,26 @@
+'use client';
+
+import { cn } from '@/utils/cn';
+import { Moon, Sun } from 'lucide-react';
+import { useTheme } from 'next-themes';
+
+export default function ThemeSwitch({ className }: { className?: string }) {
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const isDark = theme === 'dark' || resolvedTheme === 'dark';
+
+  return (
+    <button
+      id="theme-switch"
+      aria-label="Toggle dark mode"
+      className={cn(
+        'flex h-8 w-8 cursor-pointer items-center justify-center',
+        className,
+      )}
+      onClick={() => {
+        setTheme(isDark ? 'light' : 'dark');
+      }}
+    >
+      <div>{isDark ? <Sun /> : <Moon />}</div>
+    </button>
+  );
+}
