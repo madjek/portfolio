@@ -12,7 +12,7 @@ export default function SkillCard({
 }) {
   return (
     <div
-      className="transform rounded-lg bg-white p-4 shadow-lg transition-all duration-300 hover:scale-105 dark:bg-gray-800"
+      className="transform rounded-lg bg-white p-4 shadow-lg duration-300 hover:scale-105 dark:bg-gray-800"
       style={{
         animationDelay: `${index * 100}ms`,
         animation: 'fadeIn 0.5s ease forwards',

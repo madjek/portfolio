@@ -38,19 +38,22 @@ export default function Header() {
         </Link>
         {/* Desktop Navigation */}
         <nav className="hidden items-center space-x-8 md:flex">
-          <Link href="#about" className="hover:text-indigo-500">
+          <Link href="#about" className="duration-300 hover:text-indigo-500">
             {t('about')}
           </Link>
-          <Link href="#skills" className="hover:text-indigo-500">
+          <Link href="#skills" className="duration-300 hover:text-indigo-500">
             {t('skills')}
           </Link>
-          <Link href="#projects" className="hover:text-indigo-500">
+          <Link href="#projects" className="duration-300 hover:text-indigo-500">
             {t('projects')}
           </Link>
-          <Link href="#case-studies" className="hover:text-indigo-500">
+          <Link
+            href="#case-studies"
+            className="duration-300 hover:text-indigo-500"
+          >
             {t('studies')}
           </Link>
-          <Link href="#contact" className="hover:text-indigo-500">
+          <Link href="#contact" className="duration-300 hover:text-indigo-500">
             {t('contact')}
           </Link>
           <ThemeSwitch />

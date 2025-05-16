@@ -25,7 +25,7 @@ export const ProjectModal = ({
           />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 rounded-full bg-black/50 p-2 text-white transition-colors hover:bg-black/70"
+            className="absolute top-4 right-4 cursor-pointer rounded-full bg-black/50 p-2 text-white duration-300 hover:bg-black/70"
             aria-label="Close modal"
           >
             <XIcon size={20} />

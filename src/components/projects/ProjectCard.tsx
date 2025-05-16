@@ -14,14 +14,14 @@ export const ProjectCard = ({
   const t = useTranslations('projects');
 
   return (
-    <div className="overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:transform hover:shadow-2xl dark:bg-gray-800">
+    <div className="overflow-hidden rounded-xl bg-white shadow-lg duration-300 hover:scale-[1.02] hover:shadow-2xl dark:bg-gray-800">
       <div className="relative h-48 overflow-hidden">
         <Image
           width={600}
           height={200}
           src={project.image}
           alt={project.title}
-          className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+          className="h-full w-full object-cover duration-500 hover:scale-110"
         />
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent">
           <h3 className="p-4 text-xl font-bold text-white">{project.title}</h3>

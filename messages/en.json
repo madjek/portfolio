@@ -53,5 +53,13 @@
     "educationDetails": "EduCore supports both learners and educators with video courses, quizzes, and certification features. Instructors can build and manage courses, while students track their learning through intuitive dashboards. Built with React, TypeScript, and Firebase for real-time data and secure auth.",
     "projects": "Featured Projects",
     "projectsDescription": "Here's a selection of my recent work that demonstrates my expertise in building modern, responsive, and user-friendly web applications."
+  },
+  "cases": {
+    "studies": "Case Studies",
+    "description": "Detailed examinations of complex projects where I solved challenging problems and delivered exceptional results.",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "outcome": "Outcome",
+    "technology": "Technology Stack"
   }
 }

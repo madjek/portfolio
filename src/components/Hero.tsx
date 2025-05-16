@@ -40,13 +40,13 @@ export default function Hero() {
             <div className="flex flex-wrap justify-center gap-4 md:justify-start">
               <Link
                 href="#contact"
-                className="rounded-lg bg-indigo-600 px-6 py-3 text-white transition-colors duration-300 hover:bg-indigo-700"
+                className="rounded-lg bg-indigo-600 px-6 py-3 text-white duration-300 hover:bg-indigo-700"
               >
                 {t('contact')}
               </Link>
               <Link
                 href="#projects"
-                className="rounded-lg border border-indigo-600 px-6 py-3 text-indigo-600 transition-colors duration-300 hover:bg-indigo-600 hover:text-white"
+                className="rounded-lg border border-indigo-600 px-6 py-3 text-indigo-600 duration-300 hover:bg-indigo-600 hover:text-white"
               >
                 {t('viewWork')}
               </Link>
