@@ -1,7 +1,7 @@
 import { Project } from '@/types/project';
-import { XIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { LuX } from 'react-icons/lu';
 
 export const ProjectModal = ({
   project,
@@ -28,7 +28,7 @@ export const ProjectModal = ({
             className="absolute top-4 right-4 cursor-pointer rounded-full bg-black/50 p-2 text-white duration-300 hover:bg-black/70"
             aria-label="Close modal"
           >
-            <XIcon size={20} />
+            <LuX size={20} />
           </button>
         </div>
         <div className="p-6">

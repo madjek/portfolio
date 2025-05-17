@@ -1,8 +1,8 @@
 'use client';
 
 import { cn } from '@/utils/cn';
-import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { LuMoon, LuSun } from 'react-icons/lu';
 
 export default function ThemeSwitch({ className }: { className?: string }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -20,7 +20,7 @@ export default function ThemeSwitch({ className }: { className?: string }) {
         setTheme(isDark ? 'light' : 'dark');
       }}
     >
-      <div>{isDark ? <Sun /> : <Moon />}</div>
+      <div>{isDark ? <LuSun /> : <LuMoon />}</div>
     </button>
   );
 }

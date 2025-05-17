@@ -1,8 +1,9 @@
 import { Link } from '@/i18n/navigation';
 import { Project } from '@/types/project';
-import { ExternalLinkIcon, GithubIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { FaGithub } from 'react-icons/fa6';
+import { LuExternalLink } from 'react-icons/lu';
 
 export const ProjectCard = ({
   project,
@@ -48,7 +49,7 @@ export const ProjectCard = ({
               className="rounded-full bg-gray-100 p-2 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
               aria-label="GitHub Repository"
             >
-              <GithubIcon size={18} />
+              <FaGithub size={18} />
             </Link>
             <Link
               href={project.liveUrl}
@@ -57,7 +58,7 @@ export const ProjectCard = ({
               className="rounded-full bg-gray-100 p-2 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
               aria-label="Live Demo"
             >
-              <ExternalLinkIcon size={18} />
+              <LuExternalLink size={18} />
             </Link>
           </div>
           <button

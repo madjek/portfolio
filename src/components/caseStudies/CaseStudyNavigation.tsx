@@ -1,4 +1,5 @@
 import { CaseStudy } from '@/types/case';
+import { cn } from '@/utils/cn';
 
 export default function CaseStudyNavigation({
   caseStudies,
@@ -15,11 +16,12 @@ export default function CaseStudyNavigation({
         <button
           key={study.id}
           onClick={() => setActiveCaseStudy(study.id)}
-          className={`cursor-pointer rounded-lg px-6 py-3 duration-300 ${
+          className={cn(
+            'cursor-pointer rounded-lg px-6 py-3 duration-300',
             activeCaseStudy === study.id
               ? 'bg-indigo-600 text-white shadow-lg'
-              : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700'
-          }`}
+              : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700',
+          )}
         >
           {study.title}
         </button>

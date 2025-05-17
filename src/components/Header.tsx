@@ -2,9 +2,9 @@
 
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/utils/cn';
-import { MenuIcon, XIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import { LuMenu, LuX } from 'react-icons/lu';
 import ThemeSwitch from './ThemeSwitch';
 
 export default function Header() {
@@ -66,7 +66,7 @@ export default function Header() {
             className="rounded-full p-2"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
+            {isMenuOpen ? <LuX size={24} /> : <LuMenu size={24} />}
           </button>
         </div>
       </div>

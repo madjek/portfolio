@@ -62,14 +62,37 @@
     "outcome": "Outcome",
     "technology": "Technology Stack"
   },
-  "testimonials": {
-    "testimonial1": "Yevhenii transformed our outdated web platform into a modern, responsive application that our customers love. His expertise in React and attention to detail made all the difference. He's not just a developer, but a problem solver who understands business needs.",
-    "testimonial2": "Working with Yevhenii on our e-commerce redesign was a game-changer. His deep understanding of frontend performance and user experience helped us increase conversion rates by 35%. He's collaborative, communicative, and delivers high-quality code consistently.",
-    "testimonial3": "Yevheniy's expertise in React and TypeScript significantly improved our application's performance and maintainability. He implemented a component library that streamlined our development process and ensured consistency across our platform.",
+  "experience": {
     "experience1": "Developed an interactive React-based IoT platform with real-time device monitoring, intuitive UI, and Java-powered messaging on AWS for smart irrigation management.",
     "experience2": "Built diverse web solutions including a Next.js educational platform with custom CMS, a React/Node offline purchase app with QR verification, and multiple responsive, interactive UIs with HTML/CSS/TypeScript, all tailored for performance, brand alignment, and lead generation.",
-    "experienceTestimonials": "Experience & Testimonials",
-    "etDescription": "A glimpse into my professional journey and what clients and colleagues have to say about working with me.",
+    "experience": "Experience",
+    "experienceDescription": "Overview of my professional background and the real-world projects I've contributed to.",
     "present": "Present"
+  },
+  "contact": {
+    "contact": "Get In Touch",
+    "contactDescription": "Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's create something amazing together.",
+    "sendMessage": "Send a Message",
+    "nameRequired": "Name is required",
+    "invalidEmail": "Invalid email address",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required",
+    "messageSent": "Message Sent!",
+    "thankYou": "Thank you for reaching out. I'll get back to you as soon as possible!",
+    "name": "Your Name",
+    "namePlaceholder": "John Doe",
+    "email": "Your Email",
+    "subject": "Subject",
+    "subjectPlaceholder": "Project Inquiry",
+    "message": "Your Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "sending": "Sending",
+    "contactInfo": "Contact Information",
+    "emailInfo": "Email",
+    "phoneInfo": "Phone",
+    "location": "Location",
+    "locationInfo": "Alicante, Spain",
+    "connect": "Connect With Me",
+    "resume": "Download Resume"
   }
 }

@@ -1,9 +1,10 @@
 import CaseStudies from '@/components/caseStudies/CaseStudies';
+import Contact from '@/components/contact/Contact';
+import Experience from '@/components/experience/Experience';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Projects from '@/components/projects/Projects';
 import Skills from '@/components/skills/Skills';
-import Testimonials from '@/components/testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <Skills />
         <Projects />
         <CaseStudies />
-        <Testimonials />
+        <Experience />
+        <Contact />
       </main>
     </div>
   );

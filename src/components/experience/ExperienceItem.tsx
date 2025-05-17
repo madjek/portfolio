@@ -1,4 +1,4 @@
-import { WorkExperience } from '@/types/testimonials';
+import { WorkExperience } from '@/types/experience';
 import Image from 'next/image';
 
 export default function ExperienceItem({ job }: { job: WorkExperience }) {

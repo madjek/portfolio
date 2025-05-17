@@ -2,10 +2,10 @@
 
 import { useParticleAnimation } from '@/hooks/useParticleAnimation';
 import { useTypingAnimation } from '@/hooks/useTypingAnimation';
-import { ChevronsDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
+import { LuChevronsDown } from 'react-icons/lu';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 transform animate-bounce">
           <Link href="#skills" aria-label="Scroll to Skills section">
-            <ChevronsDown className="h-12 w-12 text-indigo-500" />
+            <LuChevronsDown className="h-12 w-12 text-indigo-500" />
           </Link>
         </div>
       </div>

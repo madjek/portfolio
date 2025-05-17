@@ -1,14 +1,9 @@
 'use client';
 
-import {
-  BarChart2Icon,
-  CodeIcon,
-  PaletteIcon,
-  ServerIcon,
-  TerminalIcon,
-} from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
+import { FaChartColumn } from 'react-icons/fa6';
+import { LuCode, LuPalette, LuServer, LuTerminal } from 'react-icons/lu';
 import SkillCard from './SkillCard';
 import SkillCategoryButton from './SkillCategoryButton';
 
@@ -29,7 +24,7 @@ export default function Skills() {
   const skillCategories: SkillCategory[] = [
     {
       name: 'Frontend',
-      icon: <CodeIcon size={20} />,
+      icon: <LuCode size={20} />,
       skills: [
         { name: 'React', level: 95 },
         { name: 'Next.js', level: 85 },
@@ -41,7 +36,7 @@ export default function Skills() {
     },
     {
       name: 'Backend',
-      icon: <ServerIcon size={20} />,
+      icon: <LuServer size={20} />,
       skills: [
         { name: 'Node.js', level: 85 },
         { name: 'Express', level: 80 },
@@ -52,7 +47,7 @@ export default function Skills() {
     },
     {
       name: t('design'),
-      icon: <PaletteIcon size={20} />,
+      icon: <LuPalette size={20} />,
       skills: [
         { name: 'UI/UX Design', level: 85 },
         { name: 'Figma', level: 75 },
@@ -63,7 +58,7 @@ export default function Skills() {
     },
     {
       name: t('tools'),
-      icon: <TerminalIcon size={20} />,
+      icon: <LuTerminal size={20} />,
       skills: [
         { name: 'Git', level: 90 },
         { name: 'GitHub Actions', level: 75 },
@@ -74,7 +69,7 @@ export default function Skills() {
     },
     {
       name: t('performance'),
-      icon: <BarChart2Icon size={20} />,
+      icon: <FaChartColumn size={20} />,
       skills: [
         { name: 'Web Vitals', level: 85 },
         { name: 'Lighthouse', level: 90 },
