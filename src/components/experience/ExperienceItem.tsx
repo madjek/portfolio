@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function ExperienceItem({ job }: { job: WorkExperience }) {
   return (
-    <div className="mb-12">
-      <div className="absolute -left-3 mt-1.5 h-6 w-6 rounded-full border-4 border-white bg-indigo-600 dark:border-gray-900"></div>
-      <div className="ml-6 rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800">
+    <div className="mb-2 md:mb-12">
+      <div className="absolute -left-3 mt-6 h-6 w-6 rounded-full border-4 border-white bg-indigo-600 dark:border-gray-900"></div>
+      <div className="rounded-xl bg-white p-6 shadow-lg md:ml-6 dark:bg-gray-800">
         <div className="mb-4 flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-bold">{job.role}</h3>

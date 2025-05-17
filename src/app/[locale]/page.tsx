@@ -1,6 +1,6 @@
-import CaseStudies from '@/components/caseStudies/CaseStudies';
 import Contact from '@/components/contact/Contact';
 import Experience from '@/components/experience/Experience';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Projects from '@/components/projects/Projects';
@@ -14,10 +14,10 @@ export default function Home() {
         <Hero />
         <Skills />
         <Projects />
-        <CaseStudies />
         <Experience />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

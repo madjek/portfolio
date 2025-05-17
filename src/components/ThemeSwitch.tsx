@@ -20,7 +20,7 @@ export default function ThemeSwitch({ className }: { className?: string }) {
         setTheme(isDark ? 'light' : 'dark');
       }}
     >
-      <div>{isDark ? <LuSun /> : <LuMoon />}</div>
+      <div>{isDark ? <LuSun size={20} /> : <LuMoon size={20} />}</div>
     </button>
   );
 }

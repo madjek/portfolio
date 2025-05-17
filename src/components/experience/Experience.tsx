@@ -2,6 +2,7 @@
 
 import { WorkExperience } from '@/types/experience';
 import { useTranslations } from 'next-intl';
+import { Element } from 'react-scroll';
 import ExperienceItem from './ExperienceItem';
 
 export default function Experience() {
@@ -26,9 +27,9 @@ export default function Experience() {
   ];
 
   return (
-    <section
-      id="experience"
-      className="bg-gradient-to-b from-transparent to-indigo-50 py-20 dark:to-indigo-950/30"
+    <Element
+      name="experience"
+      className="flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-indigo-50 py-4 select-none md:py-20 dark:to-indigo-950/30"
     >
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
@@ -48,6 +49,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

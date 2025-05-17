@@ -7,12 +7,12 @@ export default function SocialLinks() {
   const telegram = process.env.NEXT_PUBLIC_TELEGRAM ?? '';
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex justify-center space-x-4 md:justify-start">
       <Link
         href={linedIn}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-gray-200 p-3 transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
+        className="rounded-full bg-gray-200 p-3 shadow-sm shadow-indigo-500/50 duration-300 hover:bg-gray-300 hover:shadow-none dark:bg-gray-700 dark:hover:bg-gray-600"
         aria-label="LinkedIn"
       >
         <FaLinkedin size={24} />
@@ -21,7 +21,7 @@ export default function SocialLinks() {
         href={github}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-gray-200 p-3 transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
+        className="rounded-full bg-gray-200 p-3 shadow-sm shadow-indigo-500/50 duration-300 hover:bg-gray-300 hover:shadow-none dark:bg-gray-700 dark:hover:bg-gray-600"
         aria-label="GitHub"
       >
         <FaGithub size={24} />
@@ -31,7 +31,7 @@ export default function SocialLinks() {
         href={`https://t.me/${telegram}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-gray-200 p-3 transition-colors hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600"
+        className="rounded-full bg-gray-200 p-3 shadow-sm shadow-indigo-500/50 duration-300 hover:bg-gray-300 hover:shadow-none dark:bg-gray-700 dark:hover:bg-gray-600"
         aria-label="Telegram"
       >
         <FaTelegram size={24} />

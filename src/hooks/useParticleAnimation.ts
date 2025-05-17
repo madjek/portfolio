@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 
 export const useParticleAnimation = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const particlesArray = useRef<Particle[]>([]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -13,60 +14,62 @@ export const useParticleAnimation = () => {
 
     if (!ctx) return;
 
-    // Set canvas dimensions
-    const setCanvasDimensions = () => {
+    const PARTICLE_DENSITY = 0.00005; // pixels per particle
+    const setupCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+
+      particlesArray.current = [];
+      const area = canvas.width * canvas.height;
+      const numberOfParticles = Math.min(
+        150,
+        Math.floor(area * PARTICLE_DENSITY),
+      );
+      const colors = ['#6366f1', '#8b5cf6', '#3b82f6'];
+
+      for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray.current.push(new Particle(canvas, colors));
+      }
     };
 
-    setCanvasDimensions();
-    window.addEventListener('resize', setCanvasDimensions);
+    setupCanvas();
+    window.addEventListener('resize', setupCanvas);
 
-    // Particle properties
-    const particlesArray: Particle[] = [];
-    const numberOfParticles = Math.min(100, Math.floor(window.innerWidth / 10));
-    const colors = ['#6366f1', '#8b5cf6', '#3b82f6'];
+    let animationFrameId: number;
 
-    // Create particles
-    function init() {
-      for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle(canvas!, colors));
-      }
-    }
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Animation loop
-    function animate() {
-      ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
+      for (let i = 0; i < particlesArray.current.length; i++) {
+        const p1 = particlesArray.current[i];
+        p1.update();
+        p1.draw(ctx);
 
-      for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
-        particlesArray[i].draw(ctx!);
-
-        // Connect particles
-        for (let j = i; j < particlesArray.length; j++) {
-          const dx = particlesArray[i].x - particlesArray[j].x;
-          const dy = particlesArray[i].y - particlesArray[j].y;
+        for (let j = i + 1; j < particlesArray.current.length; j++) {
+          const p2 = particlesArray.current[j];
+          const dx = p1.x - p2.x;
+          const dy = p1.y - p2.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 100) {
-            ctx!.beginPath();
-            ctx!.strokeStyle = `rgba(99, 102, 241, ${0.2 - distance / 500})`;
-            ctx!.lineWidth = 1;
-            ctx!.moveTo(particlesArray[i].x, particlesArray[i].y);
-            ctx!.lineTo(particlesArray[j].x, particlesArray[j].y);
-            ctx!.stroke();
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(99, 102, 241, ${0.2 - distance / 500})`;
+            ctx.lineWidth = 1;
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
           }
         }
       }
 
-      requestAnimationFrame(animate);
-    }
+      animationFrameId = requestAnimationFrame(animate);
+    };
 
-    init();
     animate();
 
     return () => {
-      window.removeEventListener('resize', setCanvasDimensions);
+      window.removeEventListener('resize', setupCanvas);
+      cancelAnimationFrame(animationFrameId);
     };
   }, []);
 

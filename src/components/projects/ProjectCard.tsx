@@ -16,7 +16,7 @@ export const ProjectCard = ({
 
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow-lg duration-300 hover:scale-[1.02] hover:shadow-2xl dark:bg-gray-800">
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-36 overflow-hidden md:h-48">
         <Image
           width={600}
           height={200}
@@ -46,7 +46,7 @@ export const ProjectCard = ({
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gray-100 p-2 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
+              className="rounded-full bg-gray-100 p-2 duration-300 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
               aria-label="GitHub Repository"
             >
               <FaGithub size={18} />
@@ -55,7 +55,7 @@ export const ProjectCard = ({
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gray-100 p-2 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
+              className="rounded-full bg-gray-100 p-2 duration-300 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
               aria-label="Live Demo"
             >
               <LuExternalLink size={18} />
@@ -63,7 +63,7 @@ export const ProjectCard = ({
           </div>
           <button
             onClick={onClick}
-            className="cursor-pointer text-sm font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+            className="cursor-pointer text-sm font-medium text-indigo-600 duration-300 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
           >
             {t('viewDetails')}
           </button>

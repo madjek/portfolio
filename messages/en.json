@@ -7,7 +7,8 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "studies": "Case Studies",
+    "experience": "Experience",
+    "cases": "Case Studies",
     "contact": "Contact"
   },
   "hero": {
@@ -64,7 +65,7 @@
   },
   "experience": {
     "experience1": "Developed an interactive React-based IoT platform with real-time device monitoring, intuitive UI, and Java-powered messaging on AWS for smart irrigation management.",
-    "experience2": "Built diverse web solutions including a Next.js educational platform with custom CMS, a React/Node offline purchase app with QR verification, and multiple responsive, interactive UIs with HTML/CSS/TypeScript, all tailored for performance, brand alignment, and lead generation.",
+    "experience2": "Built diverse web solutions, implementing complex applications with secure user verification, and creating responsive, interactive user interfaces. All solutions are designed to optimize performance, ensure brand consistency, and effectively drive user engagement and lead generation.",
     "experience": "Experience",
     "experienceDescription": "Overview of my professional background and the real-world projects I've contributed to.",
     "present": "Present"
@@ -79,6 +80,9 @@
     "messageRequired": "Message is required",
     "messageSent": "Message Sent!",
     "thankYou": "Thank you for reaching out. I'll get back to you as soon as possible!",
+    "error": "Something went wrong",
+    "someError": "Please try again later.",
+    "error429": "You've sent a message recently. Please try again in 1 hour.",
     "name": "Your Name",
     "namePlaceholder": "John Doe",
     "email": "Your Email",
@@ -94,5 +98,18 @@
     "locationInfo": "Alicante, Spain",
     "connect": "Connect With Me",
     "resume": "Download Resume"
+  },
+  "footer": {
+    "footerDescription": "Middle Fullstack Developer with 3+ years of experience building modern web applications.",
+    "quickLinks": "Quick Links",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "cases": "Case Studies",
+    "contact": "Contact",
+    "contactInfo": "Contact Info",
+    "location": "Alicante, Spain",
+    "copyright": "All rights reserved."
   }
 }

@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { FaRegCircleCheck } from 'react-icons/fa6';
+import { FaRegCircleCheck, FaRegCircleStop } from 'react-icons/fa6';
 import { LuLoader, LuSend } from 'react-icons/lu';
 import { z } from 'zod';
 
@@ -13,6 +13,7 @@ export default function ContactForm() {
   const t = useTranslations('contact');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [apiError, setApiError] = useState(null);
   const formSchema = z.object({
     name: z.string().min(1, t('nameRequired')),
     email: z.string().email(t('invalidEmail')),
@@ -32,6 +33,7 @@ export default function ContactForm() {
   });
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
+    setApiError(null);
 
     try {
       const response = await fetch('/api/contact', {
@@ -46,8 +48,14 @@ export default function ContactForm() {
         setIsSubmitted(true);
         reset();
         setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        const resData = await response.json();
+        setApiError(resData.error || 'Something went wrong. Please try again.');
+        reset();
+        setTimeout(() => setIsSubmitted(false), 5000);
       }
     } catch (error) {
+      console.log(error);
       console.error('Error submitting form:', error);
     } finally {
       setIsSubmitting(false);
@@ -60,6 +68,18 @@ export default function ContactForm() {
         <FaRegCircleCheck size={48} className="mb-4 text-green-500" />
         <h4 className="mb-2 text-xl font-bold">{t('messageSent')}</h4>
         <p className="mb-0">{t('thankYou')}</p>
+      </div>
+    );
+  }
+
+  if (apiError) {
+    return (
+      <div className="flex flex-col items-center rounded-lg border border-red-200 bg-red-50 p-6 text-center dark:border-red-800 dark:bg-red-900/20">
+        <FaRegCircleStop size={48} className="mb-4 text-red-500" />
+        <h4 className="mb-2 text-xl font-bold">{t('error')}</h4>
+        <p className="mb-0">
+          {apiError === 429 ? t('error429') : t('someError')}
+        </p>
       </div>
     );
   }
@@ -148,7 +168,7 @@ export default function ContactForm() {
           rows={5}
           {...register('message')}
           className={cn(
-            'min-h-24 w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
+            'h-26 max-h-40 min-h-26 w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
             errors.message
               ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
               : 'border-gray-300 dark:border-gray-600',
@@ -167,7 +187,7 @@ export default function ContactForm() {
         type="submit"
         disabled={isSubmitting}
         className={cn(
-          'flex w-full cursor-pointer items-center justify-center rounded-lg px-6 py-3 text-white duration-300',
+          'flex w-full cursor-pointer items-center justify-center rounded-lg px-6 py-3 text-white shadow-sm shadow-indigo-500/50 duration-300 hover:shadow-none',
           isSubmitting
             ? 'cursor-not-allowed bg-indigo-400'
             : 'bg-indigo-600 hover:bg-indigo-700',

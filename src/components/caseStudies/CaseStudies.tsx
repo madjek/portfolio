@@ -3,6 +3,7 @@
 import { CaseStudy } from '@/types/case';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { Element } from 'react-scroll';
 import CaseStudyContent from './CaseStudyContent';
 import CaseStudyHeader from './CaseStudyHeader';
 import CaseStudyNavigation from './CaseStudyNavigation';
@@ -55,8 +56,8 @@ export default function CaseStudies() {
     caseStudies.find((study) => study.id === activeCaseStudy) || caseStudies[0];
 
   return (
-    <section
-      id="case-studies"
+    <Element
+      name="cases"
       className="bg-gradient-to-b from-transparent to-indigo-50 py-20 dark:to-indigo-950/30"
     >
       <div className="container mx-auto px-4">
@@ -78,6 +79,6 @@ export default function CaseStudies() {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

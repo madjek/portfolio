@@ -1,3 +1,4 @@
+import { cn } from '@/utils/cn';
 import { useTranslations } from 'next-intl';
 
 export const ProjectFilter = ({
@@ -15,11 +16,12 @@ export const ProjectFilter = ({
     <div className="mb-10 flex flex-wrap justify-center gap-2">
       <button
         onClick={() => onFilterChange('All')}
-        className={`cursor-pointer rounded-full px-4 py-2 duration-300 ${
+        className={cn(
+          'cursor-pointer rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
           activeFilter === 'All'
-            ? 'bg-indigo-600 text-white shadow-lg'
-            : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700'
-        }`}
+            ? 'bg-indigo-600 text-white'
+            : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700',
+        )}
       >
         {t('all')}
       </button>
@@ -27,11 +29,12 @@ export const ProjectFilter = ({
         <button
           key={tag}
           onClick={() => onFilterChange(tag)}
-          className={`cursor-pointer rounded-full px-4 py-2 duration-300 ${
+          className={cn(
+            'cursor-pointer rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
             activeFilter === tag
-              ? 'bg-indigo-600 text-white shadow-lg'
-              : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700'
-          }`}
+              ? 'bg-indigo-600 text-white'
+              : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700',
+          )}
         >
           {tag}
         </button>
