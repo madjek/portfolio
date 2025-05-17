@@ -1,5 +1,6 @@
 'use client';
 
+import { useIsMobile } from '@/hooks/useIsMobile';
 import { useParticleAnimation } from '@/hooks/useParticleAnimation';
 import { useTypingAnimation } from '@/hooks/useTypingAnimation';
 import { useTranslations } from 'next-intl';
@@ -18,6 +19,7 @@ export default function Hero() {
   ];
   const displayText = useTypingAnimation(titles);
   const canvasRef = useParticleAnimation();
+  const isMobile = useIsMobile();
 
   return (
     <Element
@@ -43,6 +45,7 @@ export default function Hero() {
               <ScrollLink
                 to="contact"
                 smooth
+                offset={isMobile ? -70 : 0}
                 duration={500}
                 className="cursor-pointer rounded-lg bg-indigo-600 px-6 py-3 text-white shadow-sm shadow-indigo-500 duration-300 hover:bg-indigo-700 hover:shadow-none"
               >
@@ -51,6 +54,7 @@ export default function Hero() {
               <ScrollLink
                 to="projects"
                 smooth
+                offset={isMobile ? -70 : 0}
                 duration={500}
                 className="cursor-pointer rounded-lg border border-indigo-600 px-6 py-3 text-indigo-600 shadow-sm shadow-indigo-500 duration-300 hover:bg-indigo-700 hover:text-white hover:shadow-none dark:text-indigo-400"
               >
@@ -62,6 +66,7 @@ export default function Hero() {
             <div className="relative">
               <div className="mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-indigo-500 shadow-xl md:h-80 md:w-80">
                 <Image
+                  priority
                   width={450}
                   height={450}
                   src="/img/hero.jpg"
@@ -79,6 +84,7 @@ export default function Hero() {
           <ScrollLink
             to="skills"
             smooth
+            offset={isMobile ? -70 : 0}
             duration={500}
             aria-label="Scroll to Skills section"
           >
