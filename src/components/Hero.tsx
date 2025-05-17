@@ -74,9 +74,6 @@ export default function Hero() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="absolute -right-4 -bottom-4 hidden rounded-lg bg-indigo-600 px-4 py-2 text-white shadow-lg md:block">
-                <p className="font-medium">{t('experience')}</p>
-              </div>
             </div>
           </div>
         </div>

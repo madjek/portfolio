@@ -1,6 +1,115 @@
 {
-  "home": {
-    "title": "Inicio",
-    "description": "Descripción de la página de inicio"
+  "homePage": {
+    "title": "Yevhenii Madzhar – Desarrollador Fullstack",
+    "description": "Desarrollador Fullstack creando aplicaciones web modernas, responsivas y de alto rendimiento, con enfoque en excelencia tanto en frontend como en backend."
+  },
+  "header": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "cases": "Casos de estudio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title1": "Desarrollador Fullstack",
+    "title2": "Construyendo aplicaciones web modernas",
+    "title3": "Conectando usuarios con interfaces increíbles",
+    "title4": "Desarrollando APIs con cuidado",
+    "title5": "Transformando ideas en código",
+    "hello": "Hola, soy",
+    "description": "Con más de 3 años de experiencia creando aplicaciones web hermosas, responsivas y de alto rendimiento, me especializo en desarrollo fullstack — entregando desde interfaces de usuario elegantes hasta sistemas backend confiables utilizando tecnologías modernas.",
+    "contact": "Contáctame",
+    "viewWork": "Ver mi trabajo",
+    "experience": "3+ años de experiencia"
+  },
+  "skills": {
+    "skills": "Habilidades Técnicas",
+    "description": "Combino experiencia sólida en frontend con desarrollo backend práctico, diseño intuitivo de UI/UX y un fuerte enfoque en rendimiento y herramientas. Me esfuerzo por crear aplicaciones web fluidas, mantenibles y fáciles de usar.",
+    "design": "Diseño",
+    "tools": "Herramientas",
+    "performance": "Rendimiento"
+  },
+  "projects": {
+    "viewDetails": "Ver detalles",
+    "all": "Todos",
+    "screenshots": "Capturas",
+    "ecommerce": "Centro de Insights E-Commerce",
+    "ecommerceDescription": "Un panel dinámico que ofrece insights en tiempo real para crecimiento y rendimiento en e-commerce.",
+    "ecommerceDetails": "Diseñado para empoderar a minoristas en línea, este panel agrega métricas clave de negocio con visualizaciones en tiempo real. Soporta widgets personalizables, filtros avanzados e informes exportables. Construido con Redux para gestión de estado escalable y Chart.js para gráficos interactivos.",
+    "task": "TeamFlow - App de Colaboración en Tareas",
+    "taskDescription": "Una plataforma intuitiva para gestionar tareas, equipos y cronogramas en tiempo real.",
+    "taskDetails": "TeamFlow permite colaboración fluida con tableros de tareas drag-and-drop, chat integrado, hilos de comentarios y archivos adjuntos. Construido con Next.js y Firebase para ofrecer actualizaciones en tiempo real y coordinación eficiente de tareas.",
+    "fitness": "FitTrack - Plataforma de Fitness Personal",
+    "fitnessDescription": "Una solución de fitness personalizada con seguimiento inteligente, planes personalizados y análisis de rendimiento.",
+    "fitnessDetails": "FitTrack permite a los usuarios crear y seguir planes de entrenamiento personalizados, monitorear progreso con gráficos detallados y mantenerse motivados mediante seguimiento de hitos. La app usa React y TypeScript en el frontend, respaldado por Node.js y MongoDB para manejo robusto de datos.",
+    "estate": "ProEstate - Portal de Descubrimiento de Propiedades",
+    "estateDescription": "Un portal inmobiliario elegante con navegación inmersiva y herramientas de búsqueda inteligente.",
+    "estateDetails": "ProEstate reinventa el descubrimiento de propiedades con navegación basada en mapas, tours virtuales 3D, filtros inteligentes y listados guardados fáciles de usar. Construido con Next.js para aprovechar SSR y SEO para alcance óptimo.",
+    "social": "SociaLens - Suite de Análisis Social",
+    "socialDescription": "Una herramienta poderosa para decodificar tendencias en redes sociales y aumentar engagement.",
+    "socialDetails": "SociaLens agrega datos de rendimiento de varias plataformas en paneles personalizados. Ofrece informes programados, comparativas con competidores y consejos de contenido basados en IA. Desarrollado usando React, Redux y D3.js para visualización de alto rendimiento.",
+    "education": "EduCore - Entorno de Aprendizaje Interactivo",
+    "educationDescription": "Un ecosistema de aprendizaje digital con contenido atractivo y seguimiento de progreso.",
+    "educationDetails": "EduCore soporta tanto a estudiantes como educadores con cursos en video, quizzes y funciones de certificación. Los instructores pueden crear y gestionar cursos, mientras los estudiantes siguen su aprendizaje mediante paneles intuitivos. Construido con React, TypeScript y Firebase para datos en tiempo real y autenticación segura.",
+    "projects": "Proyectos Destacados",
+    "projectsDescription": "Aquí hay una selección de mi trabajo reciente que demuestra mi experiencia en construir aplicaciones web modernas, responsivas y fáciles de usar."
+  },
+  "cases": {
+    "studies": "Casos de Estudio",
+    "description": "Exámenes detallados de proyectos complejos donde resolví problemas desafiantes y entregué resultados excepcionales.",
+    "challenge": "Desafío",
+    "solution": "Solución",
+    "outcome": "Resultado",
+    "technology": "Tecnologías Utilizadas"
+  },
+  "experience": {
+    "experience1": "Desarrollé una plataforma IoT basada en React con monitoreo de dispositivos en tiempo real, interfaz intuitiva y mensajería con Java en AWS para gestión inteligente de riego.",
+    "experience2": "Construí diversas soluciones web, implementando aplicaciones complejas con verificación segura de usuarios, y creando interfaces responsivas e interactivas. Todas las soluciones están diseñadas para optimizar rendimiento, asegurar consistencia de marca y efectivamente impulsar engagement de usuarios y generación de leads.",
+    "experience": "Experiencia",
+    "experienceDescription": "Resumen de mi trayectoria profesional y los proyectos del mundo real en los que he contribuido.",
+    "present": "Presente"
+  },
+  "contact": {
+    "contact": "Ponte en Contacto",
+    "contactDescription": "¿Tienes un proyecto en mente o quieres discutir oportunidades potenciales? Me encantaría saber de ti. Creemos algo increíble juntos.",
+    "sendMessage": "Enviar Mensaje",
+    "nameRequired": "El nombre es requerido",
+    "invalidEmail": "Correo electrónico inválido",
+    "subjectRequired": "El asunto es requerido",
+    "messageRequired": "El mensaje es requerido",
+    "messageSent": "¡Mensaje Enviado!",
+    "thankYou": "Gracias por contactarme. ¡Me pondré en contacto contigo lo antes posible!",
+    "error": "Algo salió mal",
+    "someError": "Por favor, inténtalo de nuevo más tarde.",
+    "error429": "Has enviado un mensaje recientemente. Por favor, inténtalo de nuevo en 1 hora.",
+    "name": "Tu Nombre",
+    "namePlaceholder": "Juan Pérez",
+    "email": "Tu Correo Electrónico",
+    "subject": "Asunto",
+    "subjectPlaceholder": "Consulta sobre Proyecto",
+    "message": "Tu Mensaje",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "sending": "Enviando",
+    "contactInfo": "Información de Contacto",
+    "emailInfo": "Correo Electrónico",
+    "phoneInfo": "Teléfono",
+    "location": "Ubicación",
+    "locationInfo": "Alicante, España",
+    "connect": "Conéctate Conmigo",
+    "resume": "Descargar CV"
+  },
+  "footer": {
+    "footerDescription": "Desarrollador Fullstack con 3+ años de experiencia construyendo aplicaciones web modernas.",
+    "quickLinks": "Enlaces Rápidos",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "cases": "Casos de Estudio",
+    "contact": "Contacto",
+    "contactInfo": "Información de Contacto",
+    "location": "Alicante, España",
+    "copyright": "Todos los derechos reservados."
   }
 }
