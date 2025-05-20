@@ -1,6 +1,5 @@
 import { routing } from '@/i18n/routing';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import '../globals.css';
@@ -14,15 +13,6 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 });
-
-export async function generateMetadata() {
-  const t = await getTranslations('homePage');
-
-  return {
-    title: t('title'),
-    description: t('description'),
-  };
-}
 
 export default async function RootLayout({
   children,

@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { FaRegChartBar } from 'react-icons/fa';
@@ -100,7 +101,7 @@ export default function Skills() {
         </div>
 
         {/* Skill Categories Tabs */}
-        <div className="mb-10 flex flex-wrap justify-center gap-2">
+        <div className="mb-4 flex flex-wrap justify-center gap-2 md:mb-10">
           {skillCategories.map((category) => (
             <SkillCategoryButton
               key={category.name}
@@ -114,7 +115,15 @@ export default function Skills() {
         {/* Skills Display */}
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-2 md:grid-cols-2 md:gap-6">
           {activeSkills.map((skill, index) => (
-            <SkillCard key={skill.name} skill={skill} index={index} />
+            <motion.div
+              key={skill.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+            >
+              <SkillCard skill={skill} index={index} />
+            </motion.div>
           ))}
         </div>
       </div>

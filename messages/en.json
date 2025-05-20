@@ -3,6 +3,15 @@
     "title": "Yevhenii Madzhar – Fullstack Developer",
     "description": "Fullstack developer crafting modern, responsive, and high-performance web applications with a focus on both frontend and backend excellence."
   },
+  "underConstruction": {
+    "title": "Under Construction",
+    "description": "This page is under construction. Please come back later!"
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "description": "We couldn't find the page you were looking for.",
+    "return": "Return to Homepage"
+  },
   "header": {
     "about": "About",
     "skills": "Skills",

@@ -47,7 +47,7 @@ export default function Header() {
         </ScrollLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center space-x-8 md:flex">
+        <nav className="hidden items-center space-x-8 lg:flex">
           {navLinks.map((link) => (
             <ScrollLink
               key={link}
@@ -66,7 +66,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile Navigation Toggle */}
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center lg:hidden">
           <ThemeSwitch />
           <LanguageSwitch />
           <button
@@ -81,7 +81,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="bg-gray-100 py-4 md:hidden dark:bg-gray-800">
+        <div className="bg-gray-100 py-4 lg:hidden dark:bg-gray-800">
           <div className="container mx-auto flex flex-col space-y-4 px-4">
             {navLinks.map((link) => (
               <ScrollLink

@@ -3,6 +3,7 @@
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { useParticleAnimation } from '@/hooks/useParticleAnimation';
 import { useTypingAnimation } from '@/hooks/useTypingAnimation';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { LuChevronsDown } from 'react-icons/lu';
@@ -29,19 +30,99 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 z-0" />
       <div className="z-10 container mx-auto px-4">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-          <div className="flex-1 text-center md:text-left">
+          <motion.div
+            className="flex-1 text-center md:text-left"
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
+          >
             <h1 className="mb-4 text-4xl font-bold md:text-6xl">
-              <span className="block">{t('hello')}</span>
-              <span className="text-indigo-600 select-text">
+              <motion.span
+                className="block"
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  delay: 0.2,
+                }}
+              >
+                {t('hello')}
+              </motion.span>
+              <motion.span
+                className="text-indigo-600 select-text"
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  delay: 0.4,
+                }}
+              >
                 Yevhenii Madzhar
-              </span>
+              </motion.span>
             </h1>
-            <h2 className="mb-6 h-8 text-xl md:text-2xl">
-              <span className="text-indigo-500">{displayText}</span>
+            <h2 className="mb-3 h-8 text-xl md:mb-6 md:text-2xl">
+              <motion.span
+                className="text-indigo-500"
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.6,
+                }}
+              >
+                {displayText}
+              </motion.span>
               <span className="animate-blink">|</span>
             </h2>
-            <p className="mb-8 max-w-xl text-lg">{t('description')}</p>
-            <div className="flex flex-wrap justify-center gap-4 md:justify-start">
+            <motion.p
+              className="mb-3 max-w-xl md:mb-8 md:text-lg"
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              transition={{
+                delay: 0.5,
+              }}
+            >
+              {t('description')}
+            </motion.p>
+            <motion.div
+              className="flex flex-wrap justify-center gap-4 md:justify-start"
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                delay: 0.8,
+              }}
+            >
               <ScrollLink
                 to="contact"
                 smooth
@@ -60,11 +141,31 @@ export default function Hero() {
               >
                 {t('viewWork')}
               </ScrollLink>
-            </div>
-          </div>
-          <div className="max-w-sm flex-1">
+            </motion.div>
+          </motion.div>
+          <motion.div
+            className="max-w-sm flex-1"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 1,
+            }}
+          >
             <div className="relative">
-              <div className="mx-auto h-52 w-52 overflow-hidden rounded-full border-4 border-indigo-500 shadow-xl md:h-80 md:w-80">
+              <motion.div
+                className="mx-auto h-44 w-44 overflow-hidden rounded-full border-4 border-indigo-500 shadow-xl md:h-80 md:w-80"
+                whileHover={{
+                  scale: 1.05,
+                }}
+                transition={{
+                  duration: 0.3,
+                }}
+              >
                 <Image
                   priority
                   width={450}
@@ -73,11 +174,11 @@ export default function Hero() {
                   alt="Yevhenii Madzhar"
                   className="h-full w-full object-cover"
                 />
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 transform animate-bounce">
+        <div className="absolute bottom-14 left-1/2 -translate-x-1/2 transform animate-bounce md:bottom-10">
           <ScrollLink
             to="skills"
             smooth

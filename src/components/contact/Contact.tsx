@@ -20,12 +20,10 @@ export default function Contact() {
           </h2>
           <p className="mx-auto max-w-2xl text-lg">{t('contactDescription')}</p>
         </div>
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-2 md:gap-10 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-2 md:grid-cols-2 lg:gap-10">
           <ContactInfo />
-          <div className="rounded-xl bg-white p-4 shadow-lg md:p-8 dark:bg-gray-800">
-            <h3 className="mb-6 text-2xl font-bold">{t('sendMessage')}</h3>
-            <ContactForm />
-          </div>
+
+          <ContactForm />
         </div>
       </div>
     </Element>

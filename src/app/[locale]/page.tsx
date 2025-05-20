@@ -5,6 +5,16 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Projects from '@/components/projects/Projects';
 import Skills from '@/components/skills/Skills';
+import { getTranslations } from 'next-intl/server';
+
+export async function generateMetadata() {
+  const t = await getTranslations('homePage');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default function Home() {
   return (

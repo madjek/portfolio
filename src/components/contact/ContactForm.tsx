@@ -85,126 +85,131 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {/* Name Field */}
+    <div className="rounded-xl bg-white p-4 shadow-lg lg:p-8 dark:bg-gray-800">
+      <h3 className="mb-6 text-center text-2xl font-bold">
+        {t('sendMessage')}
+      </h3>
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:gap-6">
+          {/* Name Field */}
+          <div className="relative mb-4 md:mb-0">
+            <label htmlFor="name" className="mb-2 block font-medium">
+              {t('name')}
+            </label>
+            <input
+              id="name"
+              {...register('name')}
+              className={cn(
+                'w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
+                errors.name
+                  ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
+                  : 'border-gray-300 dark:border-gray-600',
+              )}
+              placeholder={t('namePlaceholder')}
+            />
+            {errors.name && (
+              <p className="absolute left-0 text-sm text-red-500">
+                {errors.name.message}
+              </p>
+            )}
+          </div>
+
+          {/* Email Field */}
+          <div className="relative">
+            <label htmlFor="email" className="mb-2 block font-medium">
+              {t('email')}
+            </label>
+            <input
+              id="email"
+              type="email"
+              {...register('email')}
+              className={cn(
+                'w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
+                errors.email
+                  ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
+                  : 'border-gray-300 dark:border-gray-600',
+              )}
+              placeholder="email@example.com"
+            />
+            {errors.email && (
+              <p className="absolute left-0 text-sm text-red-500">
+                {errors.email.message}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Subject Field */}
         <div className="relative">
-          <label htmlFor="name" className="mb-2 block font-medium">
-            {t('name')}
+          <label htmlFor="subject" className="mb-2 block font-medium">
+            {t('subject')}
           </label>
           <input
-            id="name"
-            {...register('name')}
+            id="subject"
+            {...register('subject')}
             className={cn(
               'w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
-              errors.name
+              errors.subject
                 ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
                 : 'border-gray-300 dark:border-gray-600',
             )}
-            placeholder={t('namePlaceholder')}
+            placeholder={t('subjectPlaceholder')}
           />
-          {errors.name && (
+          {errors.subject && (
             <p className="absolute left-0 text-sm text-red-500">
-              {errors.name.message}
+              {errors.subject.message}
             </p>
           )}
         </div>
 
-        {/* Email Field */}
+        {/* Message Field */}
         <div className="relative">
-          <label htmlFor="email" className="mb-2 block font-medium">
-            {t('email')}
+          <label htmlFor="message" className="mb-2 block font-medium">
+            {t('message')}
           </label>
-          <input
-            id="email"
-            type="email"
-            {...register('email')}
+          <textarea
+            id="message"
+            rows={5}
+            {...register('message')}
             className={cn(
-              'w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
-              errors.email
+              'h-26 max-h-40 min-h-26 w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
+              errors.message
                 ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
                 : 'border-gray-300 dark:border-gray-600',
             )}
-            placeholder="email@example.com"
-          />
-          {errors.email && (
-            <p className="absolute left-0 text-sm text-red-500">
-              {errors.email.message}
+            placeholder={t('messagePlaceholder')}
+          ></textarea>
+          {errors.message && (
+            <p className="absolute left-0 -mt-1 text-sm text-red-500">
+              {errors.message.message}
             </p>
           )}
         </div>
-      </div>
 
-      {/* Subject Field */}
-      <div className="relative">
-        <label htmlFor="subject" className="mb-2 block font-medium">
-          {t('subject')}
-        </label>
-        <input
-          id="subject"
-          {...register('subject')}
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={isSubmitting}
           className={cn(
-            'w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
-            errors.subject
-              ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
-              : 'border-gray-300 dark:border-gray-600',
+            'flex w-full cursor-pointer items-center justify-center rounded-lg px-6 py-3 text-white shadow-sm shadow-indigo-500/50 duration-300 hover:shadow-none',
+            isSubmitting
+              ? 'cursor-not-allowed bg-indigo-400'
+              : 'bg-indigo-600 hover:bg-indigo-700',
           )}
-          placeholder={t('subjectPlaceholder')}
-        />
-        {errors.subject && (
-          <p className="absolute left-0 text-sm text-red-500">
-            {errors.subject.message}
-          </p>
-        )}
-      </div>
-
-      {/* Message Field */}
-      <div className="relative">
-        <label htmlFor="message" className="mb-2 block font-medium">
-          {t('message')}
-        </label>
-        <textarea
-          id="message"
-          rows={5}
-          {...register('message')}
-          className={cn(
-            'h-26 max-h-40 min-h-26 w-full rounded-lg border bg-white px-4 py-3 duration-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:bg-gray-700',
-            errors.message
-              ? 'border-red-500 focus:ring-1 focus:ring-red-500 dark:border-red-500'
-              : 'border-gray-300 dark:border-gray-600',
+        >
+          {isSubmitting ? (
+            <>
+              <LuLoader size={18} className="mr-2 animate-spin" />
+              {t('sending')}...
+            </>
+          ) : (
+            <>
+              <LuSend size={18} className="mr-2" />
+              {t('sendMessage')}
+            </>
           )}
-          placeholder={t('messagePlaceholder')}
-        ></textarea>
-        {errors.message && (
-          <p className="absolute left-0 -mt-1 text-sm text-red-500">
-            {errors.message.message}
-          </p>
-        )}
-      </div>
-
-      {/* Submit Button */}
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className={cn(
-          'flex w-full cursor-pointer items-center justify-center rounded-lg px-6 py-3 text-white shadow-sm shadow-indigo-500/50 duration-300 hover:shadow-none',
-          isSubmitting
-            ? 'cursor-not-allowed bg-indigo-400'
-            : 'bg-indigo-600 hover:bg-indigo-700',
-        )}
-      >
-        {isSubmitting ? (
-          <>
-            <LuLoader size={18} className="mr-2 animate-spin" />
-            {t('sending')}...
-          </>
-        ) : (
-          <>
-            <LuSend size={18} className="mr-2" />
-            {t('sendMessage')}
-          </>
-        )}
-      </button>
-    </form>
+        </button>
+      </form>
+    </div>
   );
 }

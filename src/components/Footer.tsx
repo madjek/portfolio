@@ -14,7 +14,6 @@ export default function Footer() {
   const github = process.env.NEXT_PUBLIC_GITHUB ?? '';
   const telegram = process.env.NEXT_PUBLIC_TELEGRAM ?? '';
   const email = process.env.NEXT_PUBLIC_EMAIL ?? '';
-  const phone = process.env.NEXT_PUBLIC_PHONE ?? '';
 
   return (
     <footer className="border-t border-indigo-700/50 bg-gray-900 py-4 text-white">
@@ -90,14 +89,6 @@ export default function Footer() {
                   className="duration-300 hover:text-indigo-400"
                 >
                   {email}
-                </Link>
-              </p>
-              <p>
-                <Link
-                  href={`tel:${phone}`}
-                  className="duration-300 hover:text-indigo-400"
-                >
-                  {phone}
                 </Link>
               </p>
             </address>

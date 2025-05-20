@@ -1,10 +1,17 @@
 import { WorkExperience } from '@/types/experience';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function ExperienceItem({ job }: { job: WorkExperience }) {
   return (
     <div className="mb-2 md:mb-12">
-      <div className="absolute -left-3 mt-6 h-6 w-6 rounded-full border-4 border-white bg-indigo-600 dark:border-gray-900"></div>
+      <motion.div
+        className="absolute -left-3 mt-6 h-6 w-6 rounded-full border-4 border-white bg-indigo-600 dark:border-gray-900"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.5, duration: 0.3 }}
+      ></motion.div>
       <div className="rounded-xl bg-white p-6 shadow-lg md:ml-6 dark:bg-gray-800">
         <div className="mb-4 flex flex-col md:flex-row md:items-center md:justify-between">
           <div>

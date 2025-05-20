@@ -1,6 +1,7 @@
 'use client';
 
 import { WorkExperience } from '@/types/experience';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Element } from 'react-scroll';
 import ExperienceItem from './ExperienceItem';
@@ -43,8 +44,16 @@ export default function Experience() {
 
         <div className="mx-auto max-w-4xl">
           <div className="relative border-l-2 border-indigo-500 pl-8">
-            {workExperience.map((job) => (
-              <ExperienceItem key={job.id} job={job} />
+            {workExperience.map((job, index) => (
+              <motion.div
+                key={job.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: index * 0.2, duration: 0.3 }}
+              >
+                <ExperienceItem job={job} />
+              </motion.div>
             ))}
           </div>
         </div>
