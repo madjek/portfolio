@@ -5,13 +5,13 @@ import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa6';
 import { LuExternalLink } from 'react-icons/lu';
 
-export const ProjectCard = ({
+export default function ProjectCard({
   project,
   onClick,
 }: {
   project: Project;
   onClick: () => void;
-}) => {
+}) {
   const t = useTranslations('projects');
 
   return (
@@ -64,7 +64,7 @@ export const ProjectCard = ({
             </div>
             <button
               onClick={onClick}
-              className="cursor-pointer text-sm font-medium text-indigo-600 duration-300 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+              className="text-sm font-medium text-indigo-600 duration-300 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
             >
               {t('viewDetails')}
             </button>
@@ -73,4 +73,4 @@ export const ProjectCard = ({
       </div>
     </div>
   );
-};
+}

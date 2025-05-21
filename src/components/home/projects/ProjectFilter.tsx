@@ -1,7 +1,7 @@
 import { cn } from '@/utils/cn';
 import { useTranslations } from 'next-intl';
 
-export const ProjectFilter = ({
+export default function ProjectFilter({
   activeFilter,
   filters,
   onFilterChange,
@@ -9,7 +9,7 @@ export const ProjectFilter = ({
   activeFilter: string;
   filters: string[];
   onFilterChange: (filter: string) => void;
-}) => {
+}) {
   const t = useTranslations('projects');
 
   return (
@@ -17,7 +17,7 @@ export const ProjectFilter = ({
       <button
         onClick={() => onFilterChange('All')}
         className={cn(
-          'cursor-pointer rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
+          'rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
           activeFilter === 'All'
             ? 'bg-indigo-600 text-white'
             : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700',
@@ -30,7 +30,7 @@ export const ProjectFilter = ({
           key={tag}
           onClick={() => onFilterChange(tag)}
           className={cn(
-            'cursor-pointer rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
+            'rounded-full px-4 py-2 shadow-sm shadow-indigo-500/25 duration-300 hover:shadow-none',
             activeFilter === tag
               ? 'bg-indigo-600 text-white'
               : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700',
@@ -41,4 +41,4 @@ export const ProjectFilter = ({
       ))}
     </div>
   );
-};
+}

@@ -89,8 +89,11 @@ export default function ContactForm() {
       <h3 className="mb-6 text-center text-2xl font-bold">
         {t('sendMessage')}
       </h3>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:gap-6">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-2 md:space-y-6"
+      >
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-6 lg:gap-2">
           {/* Name Field */}
           <div className="relative mb-4 md:mb-0">
             <label htmlFor="name" className="mb-2 block font-medium">
@@ -191,7 +194,7 @@ export default function ContactForm() {
           type="submit"
           disabled={isSubmitting}
           className={cn(
-            'flex w-full cursor-pointer items-center justify-center rounded-lg px-6 py-3 text-white shadow-sm shadow-indigo-500/50 duration-300 hover:shadow-none',
+            'flex w-full items-center justify-center rounded-lg px-6 py-3 text-white shadow-sm shadow-indigo-500/50 duration-300 hover:shadow-none',
             isSubmitting
               ? 'cursor-not-allowed bg-indigo-400'
               : 'bg-indigo-600 hover:bg-indigo-700',

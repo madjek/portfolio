@@ -5,8 +5,8 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { LuMenu, LuX } from 'react-icons/lu';
 import { Link as ScrollLink } from 'react-scroll';
-import LanguageSwitch from './LanguageSwitch';
-import ThemeSwitch from './ThemeSwitch';
+import LanguageSwitch from '../LanguageSwitch';
+import ThemeSwitch from '../ThemeSwitch';
 
 const navLinks = ['about', 'skills', 'projects', 'experience', 'contact'];
 

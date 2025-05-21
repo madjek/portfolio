@@ -110,7 +110,7 @@ export default function Hero() {
               {t('description')}
             </motion.p>
             <motion.div
-              className="flex flex-wrap justify-center gap-4 md:justify-start"
+              className="flex flex-wrap justify-center gap-2 md:justify-start md:gap-4"
               initial={{
                 opacity: 0,
                 y: 20,
@@ -170,7 +170,7 @@ export default function Hero() {
                   priority
                   width={450}
                   height={450}
-                  src="/img/hero.jpg"
+                  src="/img/home/hero.jpg"
                   alt="Yevhenii Madzhar"
                   className="h-full w-full object-cover"
                 />

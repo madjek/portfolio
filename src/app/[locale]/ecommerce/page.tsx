@@ -1,4 +1,4 @@
-import UnderConstruction from '@/components/UnderConstruction';
+import Ecommerce from '@/components/ecommerce/Ecommerce';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
@@ -10,6 +10,6 @@ export async function generateMetadata() {
   };
 }
 
-export default function Ecommerce() {
-  return <UnderConstruction />;
+export default function EcommercePage() {
+  return <Ecommerce />;
 }

@@ -47,7 +47,7 @@ export default function LanguageDropdown({
       <button
         type="button"
         className={cn(
-          'flex w-8 cursor-pointer items-center justify-center gap-2 rounded px-1 font-semibold duration-300',
+          'flex w-8 items-center justify-center gap-2 rounded px-1 font-semibold duration-300',
           open
             ? 'bg-indigo-600 text-white dark:bg-indigo-400'
             : 'border border-indigo-500/25 hover:bg-indigo-600 hover:text-white hover:dark:bg-indigo-400',

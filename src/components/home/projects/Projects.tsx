@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Element } from 'react-scroll';
-import { ProjectCard } from './ProjectCard';
-import { ProjectFilter } from './ProjectFilter';
-import { ProjectModal } from './ProjectModal';
+import ProjectCard from './ProjectCard';
+import ProjectFilter from './ProjectFilter';
+import ProjectModal from './ProjectModal';
 
 export default function Projects() {
   const t = useTranslations('projects');
@@ -21,72 +21,72 @@ export default function Projects() {
       id: 1,
       title: t('ecommerce'),
       description: t('ecommerceDescription'),
-      image: '/img/chart.jpg',
+      image: '/img/home/chart.jpg',
       tags: ['React', 'Tailwind', 'Redux', 'Chart.js'],
       githubUrl: 'https://github.com/madjek/portfolio',
       liveUrl: `${locale}/ecommerce`,
       details: t('ecommerceDetails'),
-      screenshots: ['/img/chart.jpg', '/img/ecommerce.jpg'],
+      screenshots: ['/img/home/chart.jpg', '/img/home/ecommerce.jpg'],
     },
     {
       id: 2,
       title: t('task'),
       description: t('taskDescription'),
-      image: '/img/task.jpg',
+      image: '/img/home/task.jpg',
       tags: ['React', 'Next.js', 'Tailwind'],
       githubUrl: 'https://github.com/madjek/portfolio',
 
       liveUrl: `${locale}/task`,
       details: t('taskDetails'),
-      screenshots: ['/img/task.jpg', '/img/task2.jpg'],
+      screenshots: ['/img/home/task.jpg', '/img/home/task2.jpg'],
     },
     {
       id: 3,
       title: t('fitness'),
       description: t('fitnessDescription'),
-      image: '/img/fitness.jpg',
+      image: '/img/home/fitness.jpg',
       tags: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
       githubUrl: 'https://github.com/madjek/portfolio',
 
       liveUrl: `${locale}/fitness`,
       details: t('fitnessDetails'),
-      screenshots: ['/img/fitness.jpg', '/img/fitness2.jpg'],
+      screenshots: ['/img/home/fitness.jpg', '/img/home/fitness2.jpg'],
     },
     {
       id: 4,
       title: t('estate'),
       description: t('estateDescription'),
-      image: '/img/estate.jpg',
+      image: '/img/home/estate.jpg',
       tags: ['React', 'Next.js', 'Tailwind'],
       githubUrl: 'https://github.com/madjek/portfolio',
 
       liveUrl: `${locale}/estate`,
       details: t('estateDescription'),
-      screenshots: ['/img/estate.jpg', '/img/estate2.jpg'],
+      screenshots: ['/img/home/estate.jpg', '/img/home/estate2.jpg'],
     },
     {
       id: 5,
       title: t('social'),
       description: t('socialDescription'),
-      image: '/img/social.jpg',
+      image: '/img/home/social.jpg',
       tags: ['React', 'Redux', 'D3.js', 'Node.js'],
       githubUrl: 'https://github.com/madjek/portfolio',
 
       liveUrl: `${locale}/social`,
       details: t('socialDetails'),
-      screenshots: ['/img/social.jpg', '/img/social2.jpg'],
+      screenshots: ['/img/home/social.jpg', '/img/home/social2.jpg'],
     },
     {
       id: 6,
       title: t('education'),
       description: t('educationDescription'),
-      image: '/img/education.jpg',
+      image: '/img/home/education.jpg',
       tags: ['React', 'TypeScript', 'Tailwind'],
       githubUrl: 'https://github.com/madjek/portfolio',
 
       liveUrl: `${locale}/education`,
       details: t('educationDetails'),
-      screenshots: ['/img/education.jpg', '/img/education2.jpg'],
+      screenshots: ['/img/home/education.jpg', '/img/home/education2.jpg'],
     },
   ];
   // Extract unique tags for filter

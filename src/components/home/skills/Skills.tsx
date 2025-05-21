@@ -113,7 +113,7 @@ export default function Skills() {
         </div>
 
         {/* Skills Display */}
-        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-2 md:grid-cols-2 md:gap-6">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-2 md:grid-cols-2 md:gap-2 md:gap-6">
           {activeSkills.map((skill, index) => (
             <motion.div
               key={skill.name}

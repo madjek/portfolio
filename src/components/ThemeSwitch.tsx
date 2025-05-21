@@ -13,7 +13,7 @@ export default function ThemeSwitch({ className }: { className?: string }) {
       id="theme-switch"
       aria-label="Toggle dark mode"
       className={cn(
-        'flex h-8 w-8 cursor-pointer items-center justify-center duration-300 hover:text-indigo-600 hover:dark:text-indigo-400',
+        'flex h-8 w-8 items-center justify-center duration-300 hover:text-indigo-600 hover:dark:text-indigo-400',
         className,
       )}
       onClick={() => {

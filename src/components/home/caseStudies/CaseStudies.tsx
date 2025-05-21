@@ -32,8 +32,8 @@ export default function CaseStudies() {
         'Jest',
         'Webpack',
       ],
-      image: '/img/chart.jpg',
-      diagram: '/img/dashboard.jpg',
+      image: '/img/home/chart.jpg',
+      diagram: '/img/home/dashboard.jpg',
     },
     {
       id: 2,
@@ -48,8 +48,8 @@ export default function CaseStudies() {
       outcome:
         'The new platform handled a 300% increase in traffic during Black Friday with zero downtime. Page load times decreased by 60%, and conversion rates increased by 24%. The development team was able to deploy updates 5x more frequently.',
       tech: ['Next.js', 'React', 'TypeScript', 'GraphQL', 'Storybook', 'Jest'],
-      image: '/img/pay.jpg',
-      diagram: '/img/diagram.jpg',
+      image: '/img/home/pay.jpg',
+      diagram: '/img/home/diagram.jpg',
     },
   ];
   const currentCaseStudy =

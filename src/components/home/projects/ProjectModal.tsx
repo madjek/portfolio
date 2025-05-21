@@ -3,13 +3,13 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { LuX } from 'react-icons/lu';
 
-export const ProjectModal = ({
+export default function ProjectModal({
   project,
   onClose,
 }: {
   project: Project;
   onClose: () => void;
-}) => {
+}) {
   const t = useTranslations('projects');
 
   return (
@@ -25,7 +25,7 @@ export const ProjectModal = ({
           />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 cursor-pointer rounded-full bg-black/50 p-2 text-white duration-300 hover:bg-black/70"
+            className="absolute top-4 right-4 rounded-full bg-black/50 p-2 text-white duration-300 hover:bg-black/70"
             aria-label="Close modal"
           >
             <LuX size={20} />
@@ -46,7 +46,7 @@ export const ProjectModal = ({
           <p className="mb-6">{project.details}</p>
           <div>
             <h4 className="mb-2 text-lg font-semibold">{t('screenshots')}</h4>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
               {project.screenshots.map((screenshot, index) => (
                 <div key={index} className="overflow-hidden rounded-lg">
                   <Image
@@ -64,4 +64,4 @@ export const ProjectModal = ({
       </div>
     </div>
   );
-};
+}

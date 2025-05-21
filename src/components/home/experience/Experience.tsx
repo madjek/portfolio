@@ -15,7 +15,7 @@ export default function Experience() {
       company: 'Freelance',
       period: `2023 - ${t('present')}`,
       description: t('experience2'),
-      logo: '/img/exp2.jpg',
+      logo: '/img/home/exp2.jpg',
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Experience() {
       company: 'MICRO2ENGINEERING SL',
       period: '2022 - 2023',
       description: t('experience1'),
-      logo: '/img/exp1.jpg',
+      logo: '/img/home/exp1.jpg',
     },
   ];
 
