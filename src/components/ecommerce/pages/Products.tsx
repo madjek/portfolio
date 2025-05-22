@@ -61,7 +61,7 @@ export default function Products() {
     <div className="space-y-2 md:space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Product Catalog</h1>
-        <button className="flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700">
+        <button className="flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
           <FiPlus className="h-5 w-5" />
           Add Product
         </button>

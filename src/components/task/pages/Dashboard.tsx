@@ -151,7 +151,7 @@ export default function Dashboard() {
         <h1 className="text-2xl font-bold md:text-3xl">
           Welcome back, {userName}!
         </h1>
-        <button className="mt-4 flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700 md:mt-0">
+        <button className="mt-4 flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700 md:mt-0">
           <FiPlus size={18} className="mr-2" />
           New Task
         </button>

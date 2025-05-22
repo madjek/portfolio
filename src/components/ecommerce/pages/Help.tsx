@@ -61,7 +61,7 @@ const resources: Resource[] = [
 
 export default function Help() {
   const ResourceCard = ({ title, description, icon }: Resource) => (
-    <div className="cursor-pointer rounded-lg border border-gray-200 bg-white p-3 transition-colors hover:border-blue-500 md:p-5 dark:border-gray-700 dark:bg-gray-800">
+    <div className="cursor-pointer rounded-lg border border-gray-200 bg-white p-3 hover:border-blue-500 md:p-5 dark:border-gray-700 dark:bg-gray-800">
       <div className="mb-4 inline-block rounded-lg bg-blue-50 p-3 dark:bg-gray-700">
         {React.cloneElement(icon, {
           className: 'h-6 w-6 text-blue-500 dark:text-blue-400',
@@ -102,7 +102,7 @@ export default function Help() {
           </p>
         </div>
       </div>
-      <button className="mt-4 w-full rounded-md border border-gray-200 px-4 py-2 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
+      <button className="mt-4 w-full rounded-md border border-gray-200 px-4 py-2 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-700">
         {buttonText}
       </button>
     </div>
@@ -112,7 +112,7 @@ export default function Help() {
     <div className="space-y-2 md:space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Help Center</h1>
-        <button className="rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700">
+        <button className="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
           Contact Support
         </button>
       </div>

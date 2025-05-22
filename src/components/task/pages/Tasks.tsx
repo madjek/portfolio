@@ -110,7 +110,7 @@ export default function Tasks() {
     return true;
   });
   const TaskItem = ({ task }: { task: Task }) => (
-    <div className="p-2 transition-colors hover:bg-gray-50 md:p-4 dark:hover:bg-gray-700/50">
+    <div className="p-2 hover:bg-gray-50 md:p-4 dark:hover:bg-gray-700/50">
       <div className="flex items-start">
         <div className="mr-3 pt-1">
           <div
@@ -212,7 +212,7 @@ export default function Tasks() {
           </div>
           <button
             onClick={() => setShowTaskModal(true)}
-            className="flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700"
+            className="flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
           >
             <FiPlus size={18} className="mr-2" />
             New Task

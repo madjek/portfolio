@@ -53,7 +53,7 @@ export default function Customers() {
     <div className="space-y-2 md:space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Customer Management</h1>
-        <button className="rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700">
+        <button className="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
           Add New Customer
         </button>
       </div>

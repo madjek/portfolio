@@ -101,7 +101,7 @@ export default function Teams() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="text-2xl font-bold md:text-3xl">Team Members</h1>
         <div className="flex items-center gap-3">
-          <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+          <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
             <FiPlus size={18} className="mr-2" />
             Invite Member
           </button>

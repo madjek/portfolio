@@ -72,7 +72,7 @@ export default function Settings() {
     <div className="space-y-2 md:space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Settings</h1>
-        <button className="rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700">
+        <button className="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
           Save Changes
         </button>
       </div>
@@ -137,7 +137,7 @@ export default function Settings() {
                       className="relative inline-flex cursor-pointer items-center"
                     >
                       <input type="checkbox" className="peer sr-only" />
-                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
+                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
                     </label>
                   </div>
                 ))}
@@ -145,7 +145,7 @@ export default function Settings() {
                 section.buttons.map((button, buttonIndex) => (
                   <button
                     key={buttonIndex}
-                    className={`w-full rounded-md border px-4 py-2 text-left transition-colors ${
+                    className={`w-full rounded-md border px-4 py-2 text-left ${
                       theme === 'dark'
                         ? 'border-gray-700 hover:bg-gray-700'
                         : 'border-gray-200 hover:bg-gray-50'
@@ -239,7 +239,7 @@ export default function Settings() {
               </div>
             </div>
             <button
-              className={`w-full rounded-md border px-4 py-2 text-left transition-colors ${
+              className={`w-full rounded-md border px-4 py-2 text-left ${
                 theme === 'dark'
                   ? 'border-gray-700 hover:bg-gray-700'
                   : 'border-gray-200 hover:bg-gray-50'
@@ -248,7 +248,7 @@ export default function Settings() {
               Update Payment Method
             </button>
             <button
-              className={`w-full rounded-md border px-4 py-2 text-left transition-colors ${
+              className={`w-full rounded-md border px-4 py-2 text-left ${
                 theme === 'dark'
                   ? 'border-gray-700 hover:bg-gray-700'
                   : 'border-gray-200 hover:bg-gray-50'
@@ -291,7 +291,7 @@ export default function Settings() {
                   className="relative inline-flex cursor-pointer items-center"
                 >
                   <input type="checkbox" className="peer sr-only" />
-                  <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
+                  <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"></div>
                 </label>
               </div>
             ))}

@@ -1,4 +1,4 @@
-import UnderConstruction from '@/components/UnderConstruction';
+import Fitness from '@/components/fitness/Fitness';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
@@ -10,6 +10,6 @@ export async function generateMetadata() {
   };
 }
 
-export default function Fitness() {
-  return <UnderConstruction />;
+export default function FitnessPage() {
+  return <Fitness />;
 }

@@ -86,7 +86,7 @@ export default function Analytics() {
             <option>Last 90 Days</option>
             <option>Last 12 Months</option>
           </select>
-          <button className="rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700">
+          <button className="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
             Export Report
           </button>
         </div>

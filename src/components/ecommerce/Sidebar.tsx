@@ -49,7 +49,7 @@ function NavItem({
       <button
         onClick={handleClick}
         className={cn(
-          'flex h-12 w-full items-center rounded-lg px-4 py-3 text-left transition-colors duration-200',
+          'flex h-12 w-full items-center rounded-lg px-4 py-3 text-left duration-200',
           isActive
             ? 'bg-blue-50 text-blue-600 dark:bg-gray-700 dark:text-blue-400'
             : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700',

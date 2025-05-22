@@ -225,7 +225,7 @@ export default function Timeline() {
               Month
             </button>
           </div>
-          <button className="flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+          <button className="flex w-fit items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
             <FiPlus size={18} className="mr-2" />
             Add Task
           </button>

@@ -73,10 +73,10 @@ const Settings = () => {
                       JD
                     </div>
                     <div className="flex items-center gap-3">
-                      <button className="rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                      <button className="rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                         Upload Photo
                       </button>
-                      <button className="rounded-xl border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
+                      <button className="rounded-xl border border-gray-300 px-4 py-2 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
                         Remove
                       </button>
                     </div>
@@ -153,7 +153,7 @@ const Settings = () => {
                     ></textarea>
                   </div>
                   <div className="flex justify-end">
-                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                       <FiSave size={18} className="mr-2" />
                       Save Changes
                     </button>
@@ -225,7 +225,7 @@ const Settings = () => {
                     </div>
                   </div>
                   <div className="flex justify-end">
-                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                       <FiSave size={18} className="mr-2" />
                       Save Changes
                     </button>
@@ -244,10 +244,10 @@ const Settings = () => {
                       TF
                     </div>
                     <div className="flex items-center gap-3">
-                      <button className="rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                      <button className="rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                         Upload Logo
                       </button>
-                      <button className="rounded-xl border border-gray-300 px-4 py-2 transition-colors hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
+                      <button className="rounded-xl border border-gray-300 px-4 py-2 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
                         Remove
                       </button>
                     </div>
@@ -367,7 +367,7 @@ const Settings = () => {
                     </div>
                   </div>
                   <div className="flex justify-end">
-                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                       <FiSave size={18} className="mr-2" />
                       Save Changes
                     </button>
@@ -400,7 +400,7 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-2 md:p-4 dark:border-gray-700">
@@ -419,7 +419,7 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-2 md:p-4 dark:border-gray-700">
@@ -434,7 +434,7 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                     </div>
@@ -460,7 +460,7 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-4 dark:border-gray-700">
@@ -475,13 +475,13 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                     </div>
                   </div>
                   <div className="flex justify-end">
-                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white transition-colors hover:bg-indigo-700">
+                    <button className="flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
                       <FiSave size={18} className="mr-2" />
                       Save Changes
                     </button>
@@ -503,7 +503,7 @@ const Settings = () => {
                             Update your account password
                           </p>
                         </div>
-                        <button className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
+                        <button className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700">
                           Change
                         </button>
                       </div>
@@ -526,7 +526,7 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
                         </label>
                       </div>
                       <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
@@ -549,7 +549,7 @@ const Settings = () => {
                             data
                           </p>
                         </div>
-                        <button className="rounded-lg border border-red-600 px-4 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-50 dark:border-red-400 dark:text-red-400 dark:hover:bg-red-900/30">
+                        <button className="rounded-lg border border-red-600 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-400 dark:text-red-400 dark:hover:bg-red-900/30">
                           Delete Account
                         </button>
                       </div>
