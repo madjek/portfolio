@@ -60,7 +60,7 @@ export default function Dashboard() {
         <h2 id="kpi-heading" className="sr-only">
           Key Performance Indicators
         </h2>
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-2 md:gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
           {kpiData.map((kpi, index) => (
             <KPICard
               key={`kpi-${index}`}
@@ -78,7 +78,7 @@ export default function Dashboard() {
         <h2 id="charts-heading" className="sr-only">
           Analytics Charts
         </h2>
-        <div className="grid grid-cols-1 gap-2 md:gap-2 md:gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 md:gap-6 lg:grid-cols-2">
           <div className="col-span-2">
             <SalesChart />
           </div>

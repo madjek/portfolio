@@ -1,15 +1,15 @@
-import UnderConstruction from '@/components/UnderConstruction';
+import Task from '@/components/task/Task';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
-  const t = await getTranslations('homePage');
+  const t = await getTranslations('projects');
 
   return {
-    title: t('title'),
-    description: t('description'),
+    title: t('task'),
+    description: t('taskDescription'),
   };
 }
 
-export default function Task() {
-  return <UnderConstruction />;
+export default function TaskPage() {
+  return <Task />;
 }

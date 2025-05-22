@@ -21,6 +21,9 @@ export default function Navbar() {
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
+          aria-label={
+            theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+          }
         >
           {theme === 'dark' ? (
             <FiSun className="h-5 w-5" />

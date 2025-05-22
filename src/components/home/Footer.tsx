@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-indigo-700/50 bg-gray-900 py-4 text-white">
       <div className="mx-auto px-4 lg:container">
-        <div className="grid grid-cols-1 gap-2 text-center md:grid-cols-3 md:gap-4 md:gap-10">
+        <div className="grid grid-cols-1 gap-2 text-center md:grid-cols-3 md:gap-10">
           {/* Branding & Socials */}
           <div className="flex flex-col items-center">
             <h3 className="mb-4 text-2xl font-bold">
