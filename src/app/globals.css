@@ -18,3 +18,23 @@ select,
 button {
   cursor: pointer;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #64748b;
+}

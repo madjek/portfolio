@@ -10,7 +10,7 @@ import {
   YAxis,
 } from 'recharts';
 
-const Dashboard = () => {
+export default function Dashboard() {
   // Mock data for charts
   const weeklyData = [
     {
@@ -276,5 +276,4 @@ const Dashboard = () => {
       </div>
     </div>
   );
-};
-export default Dashboard;
+}

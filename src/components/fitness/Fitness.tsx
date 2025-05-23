@@ -31,7 +31,7 @@ export default function Fitness() {
   };
 
   return (
-    <div className="bg-background text-text relative flex min-h-screen flex-col md:flex-row">
+    <div className="relative flex min-h-screen flex-col md:flex-row">
       <Sidebar />
       <main className="flex-1 overflow-y-auto bg-white p-4 pb-16 text-black md:ml-48 md:p-6 md:pb-0">
         {renderPage()}

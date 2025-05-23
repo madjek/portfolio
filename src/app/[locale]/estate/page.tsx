@@ -1,15 +1,5 @@
-import UnderConstruction from '@/components/UnderConstruction';
-import { getTranslations } from 'next-intl/server';
+import Home from '@/components/estate/pages/Home';
 
-export async function generateMetadata() {
-  const t = await getTranslations('projects');
-
-  return {
-    title: t('estate'),
-    description: t('estateDescription'),
-  };
-}
-
-export default function Estate() {
-  return <UnderConstruction />;
+export default function EstatePage() {
+  return <Home />;
 }

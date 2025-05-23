@@ -13,7 +13,7 @@ import {
   YAxis,
 } from 'recharts';
 
-const Nutrition = () => {
+export default function Nutrition() {
   // Mock data
   const macroData = [
     {
@@ -192,5 +192,4 @@ const Nutrition = () => {
       </div>
     </div>
   );
-};
-export default Nutrition;
+}

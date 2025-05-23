@@ -9,7 +9,7 @@ import {
   YAxis,
 } from 'recharts';
 
-const Tracker = () => {
+export default function Tracker() {
   // Mock data
   const dailyActivities = [
     {
@@ -183,5 +183,4 @@ const Tracker = () => {
       </div>
     </div>
   );
-};
-export default Tracker;
+}

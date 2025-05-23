@@ -1,6 +1,6 @@
 import { FiBell, FiShield, FiSmartphone, FiUser } from 'react-icons/fi';
 
-const Settings = () => {
+export default function Settings() {
   return (
     <div className="mx-auto max-w-7xl">
       <h1 className="mb-6 text-2xl font-bold md:text-3xl">Settings</h1>
@@ -102,5 +102,4 @@ const Settings = () => {
       </div>
     </div>
   );
-};
-export default Settings;
+}

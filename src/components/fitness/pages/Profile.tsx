@@ -1,7 +1,7 @@
 import { FiUser } from 'react-icons/fi';
 import { LuBadgeCheck, LuTrophy } from 'react-icons/lu';
 
-const Profile = () => {
+export default function Profile() {
   const achievements = [
     {
       name: '7-Day Streak',
@@ -143,5 +143,4 @@ const Profile = () => {
       </div>
     </div>
   );
-};
-export default Profile;
+}
