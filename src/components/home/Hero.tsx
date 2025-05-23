@@ -75,7 +75,7 @@ export default function Hero() {
                   delay: 0.4,
                 }}
               >
-                Yevhenii Madzhar
+                {t('name')}
               </motion.span>
             </h1>
             <h2 className="mb-3 h-8 text-xl md:mb-6 md:text-2xl">
