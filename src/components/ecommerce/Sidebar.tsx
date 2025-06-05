@@ -130,7 +130,7 @@ export default function Sidebar() {
       {/* Mobile sidebar */}
       <aside
         className={cn(
-          'fixed top-0 left-0 z-40 h-full border-r border-gray-200 bg-white transition-transform duration-300 md:hidden dark:border-gray-700 dark:bg-gray-800',
+          'fixed top-0 left-0 z-40 h-full border-r border-gray-200 bg-white duration-300 md:hidden dark:border-gray-700 dark:bg-gray-800',
           mobileOpen ? 'translate-x-0' : '-translate-x-full',
         )}
         aria-label="Mobile sidebar"
@@ -165,7 +165,7 @@ export default function Sidebar() {
       {/* Desktop sidebar */}
       <aside
         className={cn(
-          'hidden border-r border-gray-200 bg-white transition-all duration-300 md:block dark:border-gray-700 dark:bg-gray-800',
+          'hidden border-r border-gray-200 bg-white duration-300 md:block dark:border-gray-700 dark:bg-gray-800',
           collapsed ? 'w-17' : 'w-64',
         )}
         aria-label="Desktop sidebar"
@@ -186,7 +186,7 @@ export default function Sidebar() {
           <button
             onClick={toggleCollapse}
             className={cn(
-              'rounded-full bg-gray-200 p-1 transition-transform hover:scale-105 dark:bg-gray-700',
+              'rounded-full bg-gray-200 p-1 hover:scale-105 dark:bg-gray-700',
               collapsed && 'absolute -right-3',
             )}
             aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}

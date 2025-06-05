@@ -55,7 +55,7 @@ export default function Testimonials() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className={`w-full flex-shrink-0 transform transition-all duration-300 ease-in-out ${index === currentIndex ? 'translate-x-0 opacity-100' : 'absolute translate-x-full opacity-0'}`}
+                className={`w-full flex-shrink-0 transform duration-300 ease-in-out ${index === currentIndex ? 'translate-x-0 opacity-100' : 'absolute translate-x-full opacity-0'}`}
               >
                 <div className="rounded-2xl bg-white p-8 shadow-md md:p-10">
                   <div className="flex flex-col md:flex-row md:items-center">

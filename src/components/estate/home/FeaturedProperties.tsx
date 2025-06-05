@@ -54,7 +54,7 @@ export default function FeaturedProperties() {
           {displayedProperties.map((property) => (
             <div
               key={property.id}
-              className="overflow-hidden rounded-2xl bg-white shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
+              className="overflow-hidden rounded-2xl bg-white shadow-md hover:scale-[1.02] hover:shadow-lg"
             >
               <div className="relative">
                 <Image

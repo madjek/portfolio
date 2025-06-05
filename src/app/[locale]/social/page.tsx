@@ -1,4 +1,4 @@
-import UnderConstruction from '@/components/UnderConstruction';
+import Social from '@/components/social/Social';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
@@ -10,6 +10,6 @@ export async function generateMetadata() {
   };
 }
 
-export default function Social() {
-  return <UnderConstruction />;
+export default function SocialPage() {
+  return <Social />;
 }

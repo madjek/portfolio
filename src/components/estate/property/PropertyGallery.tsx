@@ -44,7 +44,7 @@ const PropertyGallery = ({ images }: { images: string[] }) => {
           <button
             key={index}
             onClick={() => goToImage(index)}
-            className={`h-2 w-2 rounded-full transition-colors ${index === currentIndex ? 'bg-white' : 'bg-white/50'}`}
+            className={`h-2 w-2 rounded-full ${index === currentIndex ? 'bg-white' : 'bg-white/50'}`}
           />
         ))}
       </div>

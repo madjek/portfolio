@@ -38,7 +38,7 @@ export default function WhyProEstate() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-gray-50 p-8 text-center transition-transform hover:scale-105 hover:shadow-lg"
+              className="rounded-2xl bg-gray-50 p-8 text-center hover:scale-105 hover:shadow-lg"
             >
               <div className="mb-4 flex justify-center">
                 <div className="rounded-xl bg-blue-100 p-3">{feature.icon}</div>

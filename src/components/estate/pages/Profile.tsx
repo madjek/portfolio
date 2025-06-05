@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/utils/cn';
 import Image from 'next/image';
 import { useState } from 'react';
 import { FiKey, FiLogOut, FiSave, FiUser } from 'react-icons/fi';
@@ -234,7 +235,15 @@ const Profile = () => {
                         className="peer sr-only"
                         defaultChecked
                       />
-                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                      <div
+                        className={cn(
+                          'peer h-6 w-11 rounded-full bg-gray-200',
+                          'peer-checked:bg-blue-600',
+                          'peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none',
+                          'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""]',
+                          'peer-checked:after:translate-x-full peer-checked:after:border-white',
+                        )}
+                      ></div>
                     </label>
                   </div>
                   <div className="flex items-center justify-between gap-2">
@@ -256,7 +265,15 @@ const Profile = () => {
                         className="peer sr-only"
                         defaultChecked
                       />
-                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                      <div
+                        className={cn(
+                          'peer h-6 w-11 rounded-full bg-gray-200',
+                          'peer-checked:bg-blue-600',
+                          'peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none',
+                          'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""]',
+                          'peer-checked:after:translate-x-full peer-checked:after:border-white',
+                        )}
+                      ></div>
                     </label>
                   </div>
                   <div className="flex items-center justify-between gap-2">
@@ -278,7 +295,15 @@ const Profile = () => {
                         className="peer sr-only"
                         defaultChecked
                       />
-                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                      <div
+                        className={cn(
+                          'peer h-6 w-11 rounded-full bg-gray-200',
+                          'peer-checked:bg-blue-600',
+                          'peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none',
+                          'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""]',
+                          'peer-checked:after:translate-x-full peer-checked:after:border-white',
+                        )}
+                      ></div>
                     </label>
                   </div>
                   <div className="flex items-center justify-between gap-2">
@@ -295,7 +320,15 @@ const Profile = () => {
                       className="relative inline-flex cursor-pointer items-center"
                     >
                       <input type="checkbox" className="peer sr-only" />
-                      <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+                      <div
+                        className={cn(
+                          'peer h-6 w-11 rounded-full bg-gray-200',
+                          'peer-checked:bg-blue-600',
+                          'peer-focus:ring-4 peer-focus:ring-blue-300 peer-focus:outline-none',
+                          'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""]',
+                          'peer-checked:after:translate-x-full peer-checked:after:border-white',
+                        )}
+                      ></div>
                     </label>
                   </div>
                 </div>

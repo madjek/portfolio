@@ -36,7 +36,7 @@ export default function TopCities() {
             <Link
               href={`/estate/search?location=${city.name}&type=any&priceRange=any`}
               key={city.name}
-              className="group relative h-64 overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-xl"
+              className="group relative h-64 overflow-hidden rounded-2xl shadow-md hover:shadow-xl"
             >
               <Image
                 src={city.image}

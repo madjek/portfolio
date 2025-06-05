@@ -1,3 +1,4 @@
+import { cn } from '@/utils/cn';
 import { useState } from 'react';
 import { BsFillBuildingFill, BsFillPaletteFill } from 'react-icons/bs';
 import { FiBell, FiLock, FiMoon, FiSave, FiSun, FiUser } from 'react-icons/fi';
@@ -400,7 +401,17 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200',
+                              'peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px]',
+                              'after:h-5 after:w-5 after:rounded-full after:border',
+                              "after:border-gray-300 after:bg-white after:content-['']",
+                              'peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-2 md:p-4 dark:border-gray-700">
@@ -419,7 +430,13 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""] peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-2 md:p-4 dark:border-gray-700">
@@ -434,7 +451,13 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""] peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                     </div>
@@ -460,7 +483,13 @@ const Settings = () => {
                             className="peer sr-only"
                             defaultChecked
                           />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""] peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                       <div className="flex items-center justify-between rounded-lg border border-gray-200 p-4 dark:border-gray-700">
@@ -475,7 +504,13 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""] peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                     </div>
@@ -526,7 +561,13 @@ const Settings = () => {
                           className="relative inline-flex cursor-pointer items-center"
                         >
                           <input type="checkbox" className="peer sr-only" />
-                          <div className="peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white dark:border-gray-600 dark:bg-gray-700"></div>
+                          <div
+                            className={cn(
+                              'peer h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-indigo-600 peer-focus:outline-none',
+                              'after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:content-[""] peer-checked:after:translate-x-full peer-checked:after:border-white',
+                              'dark:border-gray-600 dark:bg-gray-700',
+                            )}
+                          ></div>
                         </label>
                       </div>
                       <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
