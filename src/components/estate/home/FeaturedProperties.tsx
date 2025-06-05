@@ -113,7 +113,7 @@ export default function FeaturedProperties() {
                 </div>
                 <Link
                   href={`/estate/property/${property.id}`}
-                  className="mt-4 block rounded-lg bg-gray-100 px-4 py-2 text-center font-medium text-blue-600 transition duration-150 ease-in-out hover:bg-gray-200"
+                  className="mt-4 block rounded-lg bg-gray-100 px-4 py-2 text-center font-medium text-blue-600 duration-150 ease-in-out hover:bg-gray-200"
                 >
                   View Details
                 </Link>

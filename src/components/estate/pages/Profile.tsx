@@ -193,7 +193,7 @@ const Profile = () => {
                         />
                         <button
                           type="button"
-                          className="rounded-lg border border-gray-300 px-4 py-2 text-gray-700 transition hover:bg-gray-50"
+                          className="rounded-lg border border-gray-300 px-4 py-2 text-gray-700 hover:bg-gray-50"
                         >
                           Change Photo
                         </button>
@@ -203,7 +203,7 @@ const Profile = () => {
                   <div className="flex justify-end">
                     <button
                       type="submit"
-                      className="rounded-lg bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-700"
+                      className="rounded-lg bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
                     >
                       Save Changes
                     </button>
@@ -335,7 +335,7 @@ const Profile = () => {
                 <div className="mt-8 flex justify-end">
                   <button
                     type="button"
-                    className="rounded-lg bg-blue-600 px-6 py-2 text-white transition hover:bg-blue-700"
+                    className="rounded-lg bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
                   >
                     Save Preferences
                   </button>
@@ -364,10 +364,10 @@ const Profile = () => {
                           </p>
                         </div>
                         <div className="flex space-x-2">
-                          <button className="rounded border border-blue-600 px-3 py-1 text-sm text-blue-600 transition hover:bg-blue-50">
+                          <button className="rounded border border-blue-600 px-3 py-1 text-sm text-blue-600 hover:bg-blue-50">
                             Edit
                           </button>
-                          <button className="rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 transition hover:bg-gray-50">
+                          <button className="rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 hover:bg-gray-50">
                             Delete
                           </button>
                         </div>
@@ -387,7 +387,7 @@ const Profile = () => {
                     <p className="mb-4 text-gray-600">
                       Save your search criteria to get updates on new properties
                     </p>
-                    <button className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700">
+                    <button className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
                       Start Searching
                     </button>
                   </div>
@@ -421,7 +421,7 @@ const Profile = () => {
                             Viewed on {new Date(item.date).toLocaleDateString()}
                           </p>
                         </div>
-                        <button className="rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 transition hover:bg-gray-50">
+                        <button className="rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 hover:bg-gray-50">
                           View Again
                         </button>
                       </div>
@@ -445,7 +445,7 @@ const Profile = () => {
                     <p className="mb-4 text-gray-600">
                       Start exploring properties to see your history here
                     </p>
-                    <button className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700">
+                    <button className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
                       Explore Properties
                     </button>
                   </div>
@@ -508,7 +508,7 @@ const Profile = () => {
                       <div>
                         <button
                           type="submit"
-                          className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+                          className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
                         >
                           Update Password
                         </button>

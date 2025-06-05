@@ -189,15 +189,15 @@ export default function PropertyDetails() {
                   </Link>
                 </div>
               </div>
-              <button className="mb-3 flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition duration-150 ease-in-out hover:bg-blue-700">
+              <button className="mb-3 flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 font-medium text-white duration-150 ease-in-out hover:bg-blue-700">
                 <FiCalendar size={18} className="mr-2" />
                 Schedule a Tour
               </button>
-              <button className="mb-3 flex w-full items-center justify-center rounded-lg border border-blue-600 bg-white px-4 py-3 font-medium text-blue-600 transition duration-150 ease-in-out hover:bg-blue-50">
+              <button className="mb-3 flex w-full items-center justify-center rounded-lg border border-blue-600 bg-white px-4 py-3 font-medium text-blue-600 duration-150 ease-in-out hover:bg-blue-50">
                 <FiMessageSquare size={18} className="mr-2" />
                 Contact Agent
               </button>
-              <button className="flex w-full items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-3 font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50">
+              <button className="flex w-full items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-3 font-medium text-gray-700 duration-150 ease-in-out hover:bg-gray-50">
                 <FiHeart size={18} className="mr-2" />
                 Save Listing
               </button>

@@ -259,13 +259,13 @@ export default function FilterPanel({
           <div className="mt-6 flex justify-end space-x-4">
             <button
               onClick={clearFilters}
-              className="rounded-lg border border-gray-300 px-4 py-2 text-gray-700 transition hover:bg-gray-50"
+              className="rounded-lg border border-gray-300 px-4 py-2 text-gray-700 hover:bg-gray-50"
             >
               Clear All
             </button>
             <button
               onClick={applyFilters}
-              className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+              className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
             >
               Apply Filters
             </button>

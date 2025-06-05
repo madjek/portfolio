@@ -103,7 +103,7 @@ export default function Testimonials() {
           <div className="mt-8 flex items-center justify-center space-x-4">
             <button
               onClick={prevTestimonial}
-              className="rounded-full bg-white p-2 text-gray-600 shadow transition hover:bg-gray-100"
+              className="rounded-full bg-white p-2 text-gray-600 shadow hover:bg-gray-100"
             >
               <FiChevronLeft size={20} />
             </button>
@@ -112,13 +112,13 @@ export default function Testimonials() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`h-3 w-3 rounded-full transition ${index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+                  className={`h-3 w-3 rounded-full ${index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
                 />
               ))}
             </div>
             <button
               onClick={nextTestimonial}
-              className="rounded-full bg-white p-2 text-gray-600 shadow transition hover:bg-gray-100"
+              className="rounded-full bg-white p-2 text-gray-600 shadow hover:bg-gray-100"
             >
               <FiChevronRight size={20} />
             </button>

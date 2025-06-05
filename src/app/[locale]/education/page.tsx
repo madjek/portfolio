@@ -1,4 +1,4 @@
-import UnderConstruction from '@/components/UnderConstruction';
+import Education from '@/components/education/Education';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata() {
@@ -10,6 +10,6 @@ export async function generateMetadata() {
   };
 }
 
-export default function Education() {
-  return <UnderConstruction />;
+export default function EducationPage() {
+  return <Education />;
 }

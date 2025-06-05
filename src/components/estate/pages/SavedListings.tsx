@@ -197,7 +197,7 @@ const SavedListings = () => {
                 </p>
                 <Link
                   href={'/estate/search'}
-                  className="inline-block rounded-lg bg-blue-600 px-6 py-2 font-medium text-white transition duration-150 ease-in-out hover:bg-blue-700"
+                  className="inline-block rounded-lg bg-blue-600 px-6 py-2 font-medium text-white duration-150 ease-in-out hover:bg-blue-700"
                 >
                   Explore Properties
                 </Link>

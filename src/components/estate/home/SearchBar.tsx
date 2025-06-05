@@ -93,7 +93,7 @@ export default function SearchBar() {
           <div className="md:col-span-1">
             <button
               type="submit"
-              className="w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition duration-150 ease-in-out hover:bg-blue-700"
+              className="w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white duration-150 ease-in-out hover:bg-blue-700"
             >
               Search
             </button>
